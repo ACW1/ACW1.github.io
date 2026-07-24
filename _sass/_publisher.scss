@@ -1,0 +1,81 @@
+.publisher-body {
+  background: #f3ecdc;
+}
+
+.publisher-main {
+  padding: 0;
+}
+
+.publisher-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 32px 80px;
+}
+
+.publisher-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.publisher-site-logo img {
+  width: 140px;
+  height: auto;
+  display: block;
+}
+
+.publisher-hero {
+  text-align: center;
+  margin: 0 auto 48px;
+}
+
+.bacchus-logo {
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.publisher-hero h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin: 0 0 12px;
+  color: #132244;
+}
+
+.page-intro {
+  font-size: 1.35rem;
+  line-height: 1.4;
+  max-width: 780px;
+  margin: 0 auto;
+  color: #8b2a19;
+}
+
+.publisher-page {
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #111;
+}
+
+.publisher-page h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #132244;
+  text-align: left;
+}
+
+.publisher-page h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #132244;
+}
+
+.publisher-page p {
+  margin-bottom: 1.4rem;
+}
