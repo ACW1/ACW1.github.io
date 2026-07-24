@@ -1,0 +1,48 @@
+---
+layout: default
+---
+
+<body style="background-image: 
+    url('{{ site.url }}{{ site.baseurl }}/assets/images/burton/burtonf.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;">
+  <p id="backimg-cap">Burton E (detail)</p>
+  <main id="band" class="home" id="main" role="main" aria-label="Content">
+  <div class="wrapper">  
+
+<header class="site-masthead">
+  <div data-sticky-container>
+    <div class="plak" data-sticky data-margin-top='0' data-sticky-on="small">
+      <div class="relative">
+        <a id="areah" href='' onclick="toggleNav()" title="Menu" alt="alttext">
+          <p id="asterisk">*</p>
+        </a>
+        <a href="{{ '/' | prepend: site.baseurl }}">
+          <img id="logo" src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" title="Home" alt="{{ site.title }} – {{ site.slogan }}">
+        </a>
+      </div>
+    </div>
+  </div> 
+  {% if site.title %}
+    <h2>
+      zijn opinies
+    </h2>
+  {% endif %}
+</header>
+
+<div class="portfolio">
+  <h2 class="content-title divided">
+  </h2>
+</div> 
+ 
+{% for tag in site.categories reversed %}
+{% if tag[0] == 'opinion' %}
+<ul class="post-list">
+  {% for post in tag[1] %}
+    {% include post-list-item.html %}
+  {% endfor %}
+</ul>
+{% endif %}
+{% endfor %}
