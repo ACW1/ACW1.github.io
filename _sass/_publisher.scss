@@ -16,25 +16,28 @@
 }
 
 
-/* TUUR-logo met menu-asterisk */
+/* Klein TUUR-logo met menu-asterisk */
 
 .publisher-topbar {
   width: 100%;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .publisher-brand {
   position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
+  display: block;
+  width: 155px;
+  height: 75px;
+  overflow: visible;
 }
 
 .publisher-brand .relative {
   position: relative;
-  display: inline-block;
-  width: auto;
+  display: block;
+  width: 280px;
   height: auto;
+  transform: scale(0.5);
+  transform-origin: top left;
 }
 
 .publisher-brand .relative > a:not(#areah) {
@@ -155,16 +158,16 @@
   }
 
   .publisher-topbar {
-    margin-bottom: 36px;
+    margin-bottom: 28px;
   }
 
-  .publisher-brand #logo {
-    width: 200px;
+  .publisher-brand {
+    width: 125px;
+    height: 60px;
   }
 
-  .publisher-brand #areah {
-    top: -3px;
-    right: -17px;
+  .publisher-brand .relative {
+    transform: scale(0.4);
   }
 
   .publisher-hero {
