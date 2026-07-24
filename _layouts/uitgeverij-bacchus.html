@@ -8,18 +8,26 @@ layout: default
     <div class="publisher-wrapper">
 
       <header class="publisher-topbar">
-        <a class="publisher-site-logo" href="{{ '/' | prepend: site.baseurl }}">
-          <img
-            id="logo"
-            src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}"
-            title="Home"
-            alt="{{ site.title }} – {{ site.slogan }}">
-        </a>
+  <div class="relative publisher-brand">
 
-        <a id="areah" href="" onclick="toggleNav(); return false;" title="Menu">
-          <p id="asterisk">*</p>
-        </a>
-      </header>
+    <a id="areah"
+       href=""
+       onclick="toggleNav(); return false;"
+       title="Menu">
+      <p id="asterisk">*</p>
+    </a>
+
+    <a class="publisher-site-logo"
+       href="{{ '/' | prepend: site.baseurl }}">
+      <img
+        id="logo"
+        src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}"
+        title="Home"
+        alt="{{ site.title }} – {{ site.slogan }}">
+    </a>
+
+  </div>
+</header>
 
       <section class="publisher-hero">
         {% if page.bacchus_logo %}
