@@ -16,33 +16,64 @@
 }
 
 
-/* Klein TUUR-logo met asterisk linksboven */
+/* TUUR-logo met menu-asterisk */
 
 .publisher-topbar {
   width: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 48px;
 }
 
 .publisher-brand {
-  width: 180px;
-  height: 80px;
-  overflow: visible;
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
 }
 
 .publisher-brand .relative {
   position: relative;
-  width: 400px;
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
 
-  /*
-   * Logo en asterisk worden samen verkleind,
-   * zodat hun onderlinge positie gelijk blijft.
-   */
-  transform: scale(0.45);
-  transform-origin: top left;
+.publisher-brand .relative > a:not(#areah) {
+  display: block;
+}
+
+.publisher-brand #logo {
+  display: block;
+  width: 280px;
+  max-width: none;
+  height: auto;
+  margin: 0;
+}
+
+.publisher-brand #areah {
+  position: absolute;
+  top: -4px;
+  right: -20px;
+  bottom: auto;
+  left: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+.publisher-brand #asterisk {
+  position: static;
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 
-/* Hoofdblok Uitgeverij Bacchus */
+/* Kop van de uitgeverspagina */
 
 .publisher-hero {
   max-width: 860px;
@@ -75,7 +106,7 @@
 }
 
 
-/* Inhoud */
+/* Pagina-inhoud */
 
 .publisher-page {
   max-width: 860px;
@@ -124,16 +155,16 @@
   }
 
   .publisher-topbar {
-    margin-bottom: 24px;
+    margin-bottom: 36px;
   }
 
-  .publisher-brand {
-    width: 145px;
-    height: 65px;
+  .publisher-brand #logo {
+    width: 200px;
   }
 
-  .publisher-brand .relative {
-    transform: scale(0.36);
+  .publisher-brand #areah {
+    top: -3px;
+    right: -17px;
   }
 
   .publisher-hero {
