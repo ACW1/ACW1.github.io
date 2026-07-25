@@ -1,6 +1,6 @@
 ---
 layout: uitgeverij-bacchus
-subtitle: Een onafhankelijk uitgeverslabel voor bijzondere heruitgaven
+# subtitle: Een onafhankelijk uitgeverslabel voor bijzondere heruitgaven
 permalink: /uitgeverij-bacchus/
 bacchus_logo: /assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus.png
 ---

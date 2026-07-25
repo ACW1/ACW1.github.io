@@ -7,48 +7,15 @@ layout: default
 <header class="publisher-banner">
   <div class="publisher-banner-inner">
 
-    <div class="publisher-brand">
+    <a
+      class="publisher-home-link"
+      href="{{ '/' | prepend: site.baseurl }}"
+      title="Naar de homepage van TUUR"
+      aria-label="Naar de homepage van TUUR">
 
-      <a
-  id="areah"
-  class="publisher-menu-trigger"
-  href="#"
-  onclick="toggleNav(); return false;"
-  title="Menu">
+      <span class="publisher-asterisk-glyph" aria-hidden="true">*</span>
 
-  <svg
-    class="publisher-asterisk"
-    viewBox="0 0 100 100"
-    aria-hidden="true"
-    focusable="false">
-
-    <line
-      x1="22" y1="50"
-      x2="78" y2="50"
-      stroke="#ffffff"
-      stroke-width="7"
-      stroke-linecap="round">
-    </line>
-
-    <line
-      x1="36" y1="26"
-      x2="64" y2="74"
-      stroke="#ffffff"
-      stroke-width="7"
-      stroke-linecap="round">
-    </line>
-
-    <line
-      x1="64" y1="26"
-      x2="36" y2="74"
-      stroke="#ffffff"
-      stroke-width="7"
-      stroke-linecap="round">
-    </line>
-
-  </svg>
-</a>
-    </div>
+    </a>
 
   </div>
 </header>

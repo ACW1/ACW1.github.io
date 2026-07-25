@@ -21,23 +21,8 @@
 }
 
 
-PAGINA
-   ========================================================= */
-
-.publisher-body {
-  margin: 0;
-  background: #fef0d2;
-}
-
-.publisher-main {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: #fef0d2;
-
 /* =========================================================
-   RODE BANNER MET MENUKNOP
+   RODE BANNER MET LINK NAAR TUUR
    ========================================================= */
 
 .publisher-banner {
@@ -46,7 +31,7 @@ PAGINA
   height: 44px;
   margin: 0;
   padding: 0;
-  background: #f3545f;
+  background: #ea505a;
 }
 
 .publisher-banner-inner {
@@ -61,7 +46,13 @@ PAGINA
   padding: 0;
 }
 
-.publisher-brand {
+
+/* De asterisk is een gewone link naar de TUUR-homepage */
+
+.publisher-home-link {
+  all: unset;
+
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,52 +61,52 @@ PAGINA
   height: 44px;
   margin: 0;
   padding: 0;
+
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.publisher-brand #areah,
-.publisher-menu-trigger {
-  position: static !important;
-  top: auto !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: auto !important;
-
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-
-  box-sizing: border-box;
-  width: 44px !important;
-  height: 44px !important;
-
-  margin: 0 !important;
-  padding: 0 !important;
-
-  background: transparent !important;
-  text-decoration: none !important;
-  z-index: auto !important;
-}
-
-.publisher-asterisk {
-  position: static !important;
-  display: block !important;
-
-  width: 30px;
-  height: 30px;
-
-  margin: 0;
-  padding: 0;
-
-  overflow: visible;
-  transform: none !important;
-}
-
-.publisher-menu-trigger:hover,
-.publisher-menu-trigger:focus {
-  background: transparent !important;
-  text-decoration: none !important;
+.publisher-home-link:hover,
+.publisher-home-link:focus {
+  color: #ffffff;
+  text-decoration: none;
   opacity: 0.8;
 }
+
+.publisher-home-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: -4px;
+}
+
+
+/*
+ * De oorspronkelijke TUUR-asterisk:
+ * een gewone * in Didot bold.
+ *
+ * De gemeten padding-top van 13.06 px centreert
+ * de zichtbare Didot-glyph binnen de banner.
+ */
+
+.publisher-asterisk-glyph {
+  display: block;
+  box-sizing: content-box;
+
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 13.06px 0 0;
+
+  color: #ffffff;
+
+  font-family: Didot, "Bodoni 72", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
+
+  text-align: center;
+}
+
 
 /* =========================================================
    BACCHUS-LOGO EN ONDERTITEL
@@ -164,7 +155,7 @@ PAGINA
   max-width: 860px;
   margin: 0 auto;
 
-  color: #111;
+  color: #111111;
   font-size: 1.2rem;
   line-height: 1.7;
 }
@@ -219,25 +210,17 @@ PAGINA
 
   .publisher-banner,
   .publisher-banner-inner,
-  .publisher-brand {
+  .publisher-home-link {
     height: 42px;
   }
 
-  .publisher-brand {
+  .publisher-home-link {
     width: 42px;
   }
 
-  .publisher-brand #areah,
-  .publisher-menu-trigger,
-  .publisher-brand #asterisk,
-  .publisher-menu-trigger #asterisk {
-    width: 42px !important;
-    height: 42px !important;
-  }
-
-  .publisher-brand #asterisk,
-  .publisher-menu-trigger #asterisk {
-    font-size: 30px !important;
+  .publisher-asterisk-glyph {
+    padding-top: 12.33px;
+    font-size: 34px;
   }
 
   .publisher-wrapper {
