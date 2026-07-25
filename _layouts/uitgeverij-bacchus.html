@@ -7,25 +7,27 @@ layout: default
   <main id="main" class="publisher-main" role="main" aria-label="Content">
     <div class="publisher-wrapper">
 
-      <header class="publisher-topbar">
-  <div class="publisher-brand">
-    <div class="relative">
+      <header class="publisher-banner">
+  <div class="publisher-banner-inner">
+    <div class="publisher-brand">
+      <div class="relative">
 
-      <a id="areah"
-         href=""
-         onclick="toggleNav(); return false;"
-         title="Menu">
-        <p id="asterisk">*</p>
-      </a>
+        <a id="areah"
+           href=""
+           onclick="toggleNav(); return false;"
+           title="Menu">
+          <p id="asterisk">*</p>
+        </a>
 
-      <a href="{{ '/' | prepend: site.baseurl }}">
-        <img
-          id="logo"
-          src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}"
-          title="Home"
-          alt="{{ site.title }} – {{ site.slogan }}">
-      </a>
+        <a href="{{ '/' | prepend: site.baseurl }}">
+          <img
+            id="logo"
+            src="{{ site.url }}{{ site.baseurl }}/assets/images/tuur-logo-white.png"
+            title="Home"
+            alt="{{ site.title }} – {{ site.slogan }}">
+        </a>
 
+      </div>
     </div>
   </div>
 </header>
