@@ -7,44 +7,52 @@ layout: default
   <main id="main" class="publisher-main" role="main" aria-label="Content">
     <div class="publisher-wrapper">
 
-      <header class="publisher-topbar">
-  <div class="publisher-brand">
-    <div class="relative">
+      <<header class="publisher-banner">
+  <div class="publisher-banner-inner">
 
-      <a id="areah"
-         href=""
-         onclick="toggleNav(); return false;"
-         title="Menu">
-        <p id="asterisk">*</p>
-      </a>
+    <div class="publisher-brand">
+      <div class="relative">
 
-      <a href="{{ '/' | prepend: site.baseurl }}">
-        <img
-          id="logo"
-          src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}"
-          title="Home"
-          alt="{{ site.title }} – {{ site.slogan }}">
-      </a>
+        <a id="areah"
+           href=""
+           onclick="toggleNav(); return false;"
+           title="Menu">
+          <p id="asterisk">*</p>
+        </a>
 
+        <a href="{{ '/' | prepend: site.baseurl }}">
+          <img
+            id="logo"
+            src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}"
+            title="Home"
+            alt="{{ site.title }}">
+        </a>
+
+      </div>
     </div>
+
   </div>
 </header>
 
-      <section class="publisher-hero">
-        {% if page.bacchus_logo %}
-          <img class="bacchus-logo" src="{{ site.baseurl }}{{ page.bacchus_logo }}" alt="Uitgeverij Bacchus">
-        {% endif %}
+<main id="main" class="publisher-main" role="main" aria-label="Content">
+  <div class="publisher-wrapper">
 
-        <h1>{{ page.title }}</h1>
+    <section class="publisher-hero">
+      {% if page.bacchus_logo %}
+        <img
+          class="bacchus-logo"
+          src="{{ site.baseurl }}{{ page.bacchus_logo }}"
+          alt="Uitgeverij Bacchus">
+      {% endif %}
 
-        {% if page.subtitle %}
-          <p class="page-intro">{{ page.subtitle }}</p>
-        {% endif %}
-      </section>
+      {% if page.subtitle %}
+        <p class="page-intro">{{ page.subtitle }}</p>
+      {% endif %}
+    </section>
 
-      <article class="publisher-page">
-        {{ content }}
-      </article>
+    <article class="publisher-page">
+      {{ content }}
+    </article>
 
     </div>
   </main>
