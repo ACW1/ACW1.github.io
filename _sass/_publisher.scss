@@ -3,7 +3,7 @@
    ========================================================= */
 
 
-/* Algemene pagina */
+/* Pagina */
 
 .publisher-body {
   margin: 0;
@@ -13,16 +13,18 @@
 .publisher-main {
   width: 100%;
   min-height: 100vh;
+  margin: 0;
   padding: 0;
   background: #fef0d2;
 }
 
 
 /* =========================================================
-   TUUR-BANNER
+   RODE TUUR-BANNER
    ========================================================= */
 
 .publisher-banner {
+  box-sizing: border-box;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -31,63 +33,90 @@
 
 .publisher-banner-inner {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 1100px;
-  height: 64px;
-  margin: 0 auto;
-  padding: 10px 32px;
-
   display: flex;
   align-items: center;
+
+  width: 100%;
+  max-width: 1100px;
+  min-height: 62px;
+  margin: 0 auto;
+  padding: 8px 32px;
 }
 
 
-/*
- * Logo en asterisk blijven samen in dezelfde .relative.
- * Het hele bestaande TUUR-element wordt verkleind,
- * zodat hun onderlinge positie behouden blijft.
- */
+/* TUUR-logo en asterisk als één geheel */
 
 .publisher-brand {
-  width: 150px;
-  height: 44px;
-  overflow: visible;
-}
-
-.publisher-brand .relative {
   position: relative;
-  width: 400px;
+  display: inline-block;
+  width: 120px;
   height: auto;
-
-  transform: scale(0.36);
-  transform-origin: top left;
 }
 
-
-/* Bestaand TUUR-logo wit maken */
-
-.publisher-banner #logo {
+.publisher-home-link {
   display: block;
-  max-width: none;
+  width: 120px;
   margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.publisher-brand #logo,
+.publisher-tuur-logo {
+  position: static !important;
+  display: block !important;
+
+  width: 120px !important;
+  max-width: none !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
 
   filter: brightness(0) invert(1);
 }
 
 
-/* Asterisk wit maken */
+/* Menu-asterisk vlak naast het logo */
 
-.publisher-banner #areah {
-  color: #fff;
+.publisher-brand #areah,
+.publisher-menu-trigger {
+  position: absolute !important;
+  top: -3px !important;
+  right: -17px !important;
+  bottom: auto !important;
+  left: auto !important;
+
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: none !important;
+  text-decoration: none !important;
+  z-index: 2;
 }
 
-.publisher-banner #asterisk {
-  color: #fff;
+.publisher-brand #asterisk {
+  position: static !important;
+  display: block !important;
+
+  width: auto !important;
+  height: auto !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  color: #fff !important;
+  font-size: 22px !important;
+  line-height: 1 !important;
 }
 
 
 /* =========================================================
-   PAGINA ONDER DE BANNER
+   BACCHUS-LOGO EN ONDERTITEL
    ========================================================= */
 
 .publisher-wrapper {
@@ -98,11 +127,6 @@
   padding: 54px 32px 80px;
 }
 
-
-/* =========================================================
-   BACCHUS-LOGO EN ONDERTITEL
-   ========================================================= */
-
 .publisher-hero {
   width: 100%;
   max-width: 1000px;
@@ -112,18 +136,10 @@
 
 .bacchus-logo {
   display: block;
-  width: auto;
+  width: 100%;
   max-width: 760px;
-  max-height: 220px;
+  height: auto;
   margin: 0 auto 28px;
-}
-
-.publisher-hero h1 {
-  margin: 0 0 18px;
-  color: #132244;
-  font-size: 3rem;
-  line-height: 1.1;
-  font-weight: normal;
 }
 
 .publisher-hero .page-intro {
@@ -184,9 +200,7 @@
 }
 
 
-/* =========================================================
-   FOOTER OP DEZELFDE ACHTERGROND
-   ========================================================= */
+/* Footer */
 
 .publisher-body .footer {
   background: #fef0d2;
@@ -200,17 +214,28 @@
 @media screen and (max-width: 640px) {
 
   .publisher-banner-inner {
-    height: 54px;
-    padding: 9px 20px;
+    min-height: 54px;
+    padding: 8px 20px;
   }
 
-  .publisher-brand {
-    width: 125px;
-    height: 36px;
+  .publisher-brand,
+  .publisher-home-link {
+    width: 100px;
   }
 
-  .publisher-brand .relative {
-    transform: scale(0.30);
+  .publisher-brand #logo,
+  .publisher-tuur-logo {
+    width: 100px !important;
+  }
+
+  .publisher-brand #areah,
+  .publisher-menu-trigger {
+    top: -3px !important;
+    right: -15px !important;
+  }
+
+  .publisher-brand #asterisk {
+    font-size: 19px !important;
   }
 
   .publisher-wrapper {
@@ -222,14 +247,8 @@
   }
 
   .bacchus-logo {
-    width: 100%;
     max-width: 100%;
-    max-height: none;
     margin-bottom: 22px;
-  }
-
-  .publisher-hero h1 {
-    font-size: 2.25rem;
   }
 
   .publisher-hero .page-intro {

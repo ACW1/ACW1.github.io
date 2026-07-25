@@ -4,40 +4,48 @@ layout: default
 
 <body class="publisher-body">
 
-  <main id="main" class="publisher-main" role="main" aria-label="Content">
-    <div class="publisher-wrapper">
-
-      <<header class="publisher-banner">
+<header class="publisher-banner">
   <div class="publisher-banner-inner">
 
     <div class="publisher-brand">
-      <div class="relative">
 
-        <a id="areah"
-           href=""
-           onclick="toggleNav(); return false;"
-           title="Menu">
-          <p id="asterisk">*</p>
-        </a>
+      <a
+        class="publisher-home-link"
+        href="{{ '/' | prepend: site.baseurl }}"
+        title="Home">
 
-        <a href="{{ '/' | prepend: site.baseurl }}">
-          <img
-            id="logo"
-            src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}"
-            title="Home"
-            alt="{{ site.title }}">
-        </a>
+        <img
+          id="logo"
+          class="publisher-tuur-logo"
+          src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}"
+          alt="{{ site.title }}">
+      </a>
 
-      </div>
+      <a
+        id="areah"
+        class="publisher-menu-trigger"
+        href="#"
+        onclick="toggleNav(); return false;"
+        title="Menu">
+
+        <span id="asterisk" aria-hidden="true">*</span>
+      </a>
+
     </div>
 
   </div>
 </header>
 
-<main id="main" class="publisher-main" role="main" aria-label="Content">
+<main
+  id="main"
+  class="publisher-main"
+  role="main"
+  aria-label="Content">
+
   <div class="publisher-wrapper">
 
     <section class="publisher-hero">
+
       {% if page.bacchus_logo %}
         <img
           class="bacchus-logo"
@@ -46,14 +54,13 @@ layout: default
       {% endif %}
 
       {% if page.subtitle %}
-        <p class="page-intro">{{ page.subtitle }}</p>
+        <p class="page-intro">
+          {{ page.subtitle }}
+        </p>
       {% endif %}
+
     </section>
 
     <article class="publisher-page">
       {{ content }}
     </article>
-
-    </div>
-  </main>
-</body>
