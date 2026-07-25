@@ -12,38 +12,29 @@
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 48px 32px 80px;
+  padding: 24px 32px 80px;
 }
 
 
-/* Rode banner bovenaan */
+/* Klein TUUR-logo met menu-asterisk */
 
-.publisher-banner {
+.publisher-topbar {
   width: 100%;
-  background: #d8666e; /* vervang evt door exact TUUR-rood */
-  margin: 0;
-  padding: 0;
-}
-
-.publisher-banner-inner {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 14px 32px 12px;
+  margin-bottom: 36px;
 }
 
 .publisher-brand {
   position: relative;
-  display: inline-block;
-  width: 120px;
-  height: 42px;
+  display: block;
+  width: 155px;
+  height: 75px;
   overflow: visible;
 }
 
 .publisher-brand .relative {
   position: relative;
   display: block;
-  width: 240px;
+  width: 280px;
   height: auto;
   transform: scale(0.5);
   transform-origin: top left;
@@ -55,7 +46,7 @@
 
 .publisher-brand #logo {
   display: block;
-  width: 240px;
+  width: 280px;
   max-width: none;
   height: auto;
   margin: 0;
@@ -63,10 +54,10 @@
 
 .publisher-brand #areah {
   position: absolute;
-  top: -3px;
-  right: -16px;
-  left: auto;
+  top: -4px;
+  right: -20px;
   bottom: auto;
+  left: auto;
   width: auto;
   height: auto;
   margin: 0;
@@ -77,17 +68,18 @@
 .publisher-brand #asterisk {
   position: static;
   display: block;
+  width: auto;
+  height: auto;
   margin: 0;
   padding: 0;
   line-height: 1;
-  color: #ffffff;
 }
 
 
-/* Hero met UB-logo of woordmerk */
+/* Kop van de uitgeverspagina */
 
 .publisher-hero {
-  max-width: 1000px;
+  max-width: 860px;
   margin: 0 auto 48px;
   text-align: center;
 }
@@ -95,9 +87,9 @@
 .bacchus-logo {
   display: block;
   width: auto;
-  max-width: 760px;
-  max-height: 220px;
-  margin: 0 auto 20px;
+  max-width: 100%;
+  /*max-height: 180px;*/
+  margin: 0 auto 24px;
 }
 
 .publisher-hero h1 {
@@ -109,7 +101,7 @@
 }
 
 .publisher-hero .page-intro {
-  max-width: 760px;
+  max-width: 720px;
   margin: 0 auto;
   color: #8b2a19;
   font-size: 1.35rem;
@@ -158,42 +150,36 @@
 }
 
 
-/* Mobiel */
+/* Kleinere schermen */
 
 @media screen and (max-width: 640px) {
-  .publisher-banner-inner {
-    padding: 12px 20px 10px;
+  .publisher-wrapper {
+    padding: 18px 20px 60px;
   }
 
-  .publisher-wrapper {
-    padding: 36px 20px 60px;
+  .publisher-topbar {
+    margin-bottom: 28px;
   }
 
   .publisher-brand {
-    width: 100px;
-    height: 35px;
+    width: 125px;
+    height: 60px;
   }
 
   .publisher-brand .relative {
-    transform: scale(0.42);
+    transform: scale(0.4);
   }
 
   .publisher-hero {
     margin-bottom: 36px;
   }
 
-  .bacchus-logo {
-    max-width: 100%;
-    max-height: none;
-    margin-bottom: 18px;
-  }
-
   .publisher-hero h1 {
-    font-size: 2.2rem;
+    font-size: 2.25rem;
   }
 
   .publisher-hero .page-intro {
-    font-size: 1.12rem;
+    font-size: 1.15rem;
   }
 
   .publisher-page {
