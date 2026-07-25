@@ -3,7 +3,7 @@ layout: uitgeverij-bacchus
 title: Uitgeverij Bacchus
 subtitle: Een onafhankelijk uitgeverslabel voor bijzondere heruitgaven
 permalink: /uitgeverij-bacchus/
-# bacchus_logo: /assets/images/bacchus/bacchus-logo.png
+bacchus_logo: /assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus.png
 ---
 
 Uitgeverij Bacchus is opgericht voor de publicatie van bijzondere werken die ten onrechte uit beeld zijn geraakt. De nadruk ligt daarbij op een zorgvuldige reconstructie van het oorspronkelijke materiaal, een passende vormgeving en voldoende historische context.
