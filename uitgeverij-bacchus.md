@@ -9,6 +9,64 @@ Uitgeverij Bacchus is opgericht voor de publicatie van bijzondere werken die ten
 
 De eerste uitgave van Bacchus is *Mijnheer Pimpelmans heeft alweer pech* van G.Th. Rotman, een beeldverhaal dat oorspronkelijk als krantenserie verscheen en nooit eerder in boekvorm werd uitgebracht.
 
+<section class="publisher-release">
+
+  <div class="publisher-release-inner">
+
+    <!-- OMSLAG -->
+    <figure class="publisher-release-cover">
+      <img
+        src="/assets/images/bacchus/pimpelmans-cover-placeholder.jpg"
+        alt="Omslag van Mijnheer Pimpelmans heeft alweer pech">
+    </figure>
+
+    <!-- TEKST -->
+    <div class="publisher-release-copy">
+
+      <p class="publisher-release-label">
+        Eerste uitgave
+      </p>
+
+      <h2 class="publisher-release-title">
+        Mijnheer Pimpelmans heeft alweer pech
+      </h2>
+
+      <p class="publisher-release-author">
+        G.Th. Rotman
+      </p>
+
+      <p class="publisher-release-description">
+        Een nooit eerder in boekvorm verschenen beeldverhaal uit 1941,
+        zorgvuldig gereconstrueerd uit de best bewaard gebleven krantenafleveringen.
+      </p>
+
+      <!-- Later eventueel gebruiken -->
+      <!--
+      <blockquote class="publisher-release-quote">
+        “Hier komt later een aanprijzende quote.”
+        <cite>— Naam recensent of publicatie</cite>
+      </blockquote>
+      -->
+
+      <a
+        class="publisher-release-link"
+        href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629">
+        Bekijk het boek
+      </a>
+
+    </div>
+
+    <!-- BINNENBEELD -->
+    <figure class="publisher-release-image">
+      <img
+        src="/assets/images/bacchus/pimpelmans-binnenbeeld-placeholder.jpg"
+        alt="Afbeelding uit Mijnheer Pimpelmans heeft alweer pech">
+    </figure>
+
+  </div>
+
+</section>
+
 ## Zorgvuldig opnieuw uitgegeven
 
 De uitgaven van Bacchus worden zo veel mogelijk opgebouwd uit oorspronkelijk bronmateriaal. Afbeeldingen worden geselecteerd uit de best beschikbare scans en waar nodig gerestaureerd. Spelling, typografie en vormgeving worden met respect voor het oorspronkelijke werk behandeld, zonder de leesbaarheid uit het oog te verliezen.
