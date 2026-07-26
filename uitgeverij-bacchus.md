@@ -37,7 +37,7 @@ De eerste uitgave van Bacchus is *Mijnheer Pimpelmans heeft alweer pech* van G.T
         </p>
 
         <p class="publisher-release-description">
-          Het zesde en laatste verhaal uit Rotmans Pimpelmansreeks werd in 1941 in verschillende kranten gepubliceerd. Anders dan de eerdere verhalen verscheen het nooit in boekvorm — tot nu toe.
+          In 1941 verscheen het laatste verhaal van Rotmans Pimpelmansreeks in de krant. Anders dan de vijf voorgaande verhalen verscheen het nooit in boekvorm — tot nu toe.
         </p>
 
       </div>
