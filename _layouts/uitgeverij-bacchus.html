@@ -48,3 +48,40 @@ layout: default
     <article class="publisher-page">
       {{ content }}
     </article>
+
+      </div>
+</main>
+
+<script>
+  function centerPublisherCopyBetweenImages() {
+    const cover = document.querySelector(".publisher-release-cover img");
+    const copy = document.querySelector(".publisher-release-copy");
+    const insideImage = document.querySelector(".publisher-release-image img");
+
+    if (!cover || !copy || !insideImage) return;
+
+    if (window.matchMedia("(max-width: 1050px)").matches) {
+      copy.style.transform = "none";
+      return;
+    }
+
+    copy.style.transform = "none";
+
+    const coverRect = cover.getBoundingClientRect();
+    const copyRect = copy.getBoundingClientRect();
+    const imageRect = insideImage.getBoundingClientRect();
+
+    const targetCenter =
+      coverRect.right + (imageRect.left - coverRect.right) / 2;
+
+    const copyCenter =
+      copyRect.left + copyRect.width / 2;
+
+    const shift = targetCenter - copyCenter;
+
+    copy.style.transform = `translateX(${shift}px)`;
+  }
+
+  window.addEventListener("load", centerPublisherCopyBetweenImages);
+  window.addEventListener("resize", centerPublisherCopyBetweenImages);
+</script>
