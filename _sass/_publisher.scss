@@ -186,6 +186,24 @@
   color: #132244;
 }
 
+/* =========================================================
+   EERSTE SCHERM
+   ========================================================= */
+
+.publisher-introduction {
+  /*
+   * De beschikbare schermhoogte minus:
+   * 44 px rode banner
+   * 54 px bovenpadding van de wrapper
+   * circa 174 px logozone
+   * 58 px ruimte onder het logo
+   * 8 px zichtbaar wit randje
+   */
+  min-height: calc(100vh - 338px);
+
+  box-sizing: border-box;
+  padding-bottom: 8px;
+}
 
 /* =========================================================
    UITGELICHTE UITGAVE
@@ -197,7 +215,7 @@
 
   box-sizing: border-box;
   width: 100vw;
-  margin: 4.5rem 0;
+  margin: 0 0 4.5rem;
   margin-left: -50vw;
 
   background: #ffffff;
@@ -516,6 +534,14 @@
     font-size: 1.35rem;
   }
 
+.publisher-introduction {
+  min-height: auto;
+  padding-bottom: 0;
+}
+
+.publisher-release {
+  margin-top: 3rem;
+}
 
   /* Uitgelichte uitgave */
 
