@@ -51,62 +51,7 @@ layout: default
 
       </div>
 </main>
-<script>
-  (() => {
-    const desktopMediaQuery = window.matchMedia("(min-width: 641px)");
 
-    function positionPublisherRelease() {
-      const release = document.querySelector(".publisher-release");
-
-      if (!release) {
-        return;
-      }
-
-      /*
-       * Verwijder eerst de eerder berekende marge.
-       * Anders wordt bij iedere nieuwe meting de oude marge meegerekend.
-       */
-      release.style.marginTop = "0px";
-
-      /*
-       * Op mobiel wordt de positie niet kunstmatig aangepast.
-       */
-      if (!desktopMediaQuery.matches) {
-        return;
-      }
-
-      /*
-       * Laat hooguit 8 pixels van de witte boekstrook
-       * aan de onderkant van het scherm zien.
-       */
-      const visibleWhiteEdge = 8;
-      const naturalTop = release.getBoundingClientRect().top;
-      const desiredTop = window.innerHeight - visibleWhiteEdge;
-      const requiredMargin = Math.max(0, desiredTop - naturalTop);
-
-      release.style.marginTop = requiredMargin + "px";
-    }
-
-    function schedulePositioning() {
-      window.requestAnimationFrame(positionPublisherRelease);
-    }
-
-    window.addEventListener("load", schedulePositioning);
-    window.addEventListener("resize", schedulePositioning);
-
-    if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(schedulePositioning);
-    }
-
-    document
-      .querySelectorAll(".publisher-introduction img, .publisher-hero img")
-      .forEach((image) => {
-        if (!image.complete) {
-          image.addEventListener("load", schedulePositioning);
-        }
-      });
-  })();
-</script>
 <script>
   function centerPublisherCopyBetweenImages() {
     const cover = document.querySelector(".publisher-release-cover img");
