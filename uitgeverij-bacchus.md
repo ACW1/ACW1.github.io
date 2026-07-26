@@ -49,9 +49,8 @@ bacchus_logo: /assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus.png
         </p>
 
         <p class="publisher-release-description">
-          In 1941 verscheen het laatste verhaal van Rotmans Pimpelmansreeks
-          in de krant. Anders dan de vijf voorgaande verhalen verscheen het
-          nooit in boekvorm — tot nu toe.
+          In 1941 werd het laatste verhaal van Rotmans Pimpelmansreeks
+          in de krant gepubliceerd. Anders dan de vijf voorgaande verhalen verscheen het nooit in boekvorm — tot nu toe.
         </p>
 
       </div>
