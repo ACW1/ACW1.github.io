@@ -453,7 +453,8 @@
   }
 
   .publisher-release-cover img {
-    width: min(78vw, 330px);
+    width: 78vw;
+max-width: 330px;
     max-height: none;
   }
 
