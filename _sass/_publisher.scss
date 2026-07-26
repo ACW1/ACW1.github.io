@@ -79,13 +79,7 @@
 }
 
 
-/*
- * De oorspronkelijke TUUR-asterisk:
- * een gewone * in Didot bold.
- *
- * De gemeten padding-top van 13.06 px centreert
- * de zichtbare Didot-glyph binnen de banner.
- */
+/* De oorspronkelijke TUUR-asterisk */
 
 .publisher-asterisk-glyph {
   display: block;
@@ -192,14 +186,10 @@
   color: #132244;
 }
 
+
 /* =========================================================
    UITGELICHTE UITGAVE
    ========================================================= */
-
-/*
- * De strook breekt uit de smalle tekstkolom en vult
- * de volledige breedte van het browservenster.
- */
 
 .publisher-release {
   position: relative;
@@ -210,31 +200,50 @@
   margin: 4.5rem 0;
   margin-left: -50vw;
 
-  color: #fef0d2;
-  background: #132244;
+  background: #ffffff;
 }
 
 
-/*
- * Binnen de schermbrede achtergrond blijft de inhoud
- * begrensd, zodat hij op zeer brede schermen niet uit elkaar valt.
- */
+/* Het volledige blok is klikbaar */
+
+.publisher-release-block {
+  display: block;
+
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.publisher-release-block:hover,
+.publisher-release-block:focus {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+
+/* Drie kolommen */
 
 .publisher-release-inner {
   box-sizing: border-box;
   display: grid;
+
   grid-template-columns:
-    minmax(220px, 0.78fr)
-    minmax(320px, 1.1fr)
-    minmax(340px, 1.35fr);
+    minmax(320px, 1fr)
+    minmax(320px, 0.95fr)
+    minmax(320px, 1fr);
+
   align-items: center;
-  gap: clamp(32px, 4vw, 72px);
+  gap: 52px;
 
   width: 100%;
-  max-width: 1500px;
-  min-height: 560px;
+  max-width: 1540px;
+  min-height: 500px;
+
   margin: 0 auto;
-  padding: clamp(42px, 5vw, 80px);
+  padding: 58px 64px;
 }
 
 
@@ -247,19 +256,24 @@
   justify-content: center;
   align-items: center;
 
+  width: 100%;
   margin: 0;
 }
 
 .publisher-release-cover img {
   display: block;
 
-  width: auto;
-  max-width: 100%;
-  max-height: 470px;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
 
   object-fit: contain;
 
-  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.28);
+  box-shadow: 0 12px 28px rgba(19, 34, 68, 0.18);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 
@@ -269,26 +283,21 @@
 
 .publisher-release-copy {
   align-self: center;
-}
 
-.publisher-release-label {
-  margin: 0 0 0.75rem;
-
-  color: #ea505a;
-  font-size: 0.82rem;
-  line-height: 1.3;
-  font-weight: bold;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .publisher-release-title {
-  margin: 0 0 0.6rem !important;
+  margin: 0 0 0.75rem !important;
 
-  color: #fef0d2 !important;
-  font-size: clamp(2rem, 3vw, 3.4rem) !important;
-  line-height: 1.08 !important;
-  font-weight: normal !important;
+  color: #132244 !important;
+
+  font-size: 2rem !important;
+  line-height: 1.16 !important;
+  font-weight: 600 !important;
   text-align: left !important;
 }
 
@@ -296,30 +305,35 @@
   margin: 0 0 1.7rem;
 
   color: #ea505a;
-  font-size: clamp(1.15rem, 1.6vw, 1.5rem);
+
+  font-size: 1.4rem;
+  font-weight: bold;
   line-height: 1.3;
 }
 
 .publisher-release-description {
-  max-width: 34rem;
-  margin: 0 0 2rem;
+  max-width: 31rem;
+  margin: 0;
 
-  color: #fef0d2;
-  font-size: clamp(1.05rem, 1.25vw, 1.25rem);
+  color: #132244;
+
+  font-size: 1.15rem;
   line-height: 1.55;
 }
 
 
-/* Eventuele latere quote */
+/* Eventueel later toe te voegen quote */
 
 .publisher-release-quote {
-  margin: 2rem 0;
+  margin: 2rem 0 0;
   padding: 0;
 
-  color: #fef0d2;
-  font-size: 1.15rem;
+  color: #132244;
+
+  font-size: 1.12rem;
   line-height: 1.5;
   font-style: italic;
+
   border: 0;
 }
 
@@ -328,33 +342,9 @@
   margin-top: 0.6rem;
 
   color: #ea505a;
+
   font-size: 0.9rem;
   font-style: normal;
-}
-
-
-/* Linkknop */
-
-.publisher-release-link {
-  display: inline-block;
-
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0.7rem 1.1rem;
-
-  color: #132244 !important;
-  background: #ea505a;
-
-  font-size: 0.95rem;
-  line-height: 1.2;
-  text-decoration: none;
-}
-
-.publisher-release-link:hover,
-.publisher-release-link:focus {
-  color: #132244 !important;
-  background: #fef0d2;
-  text-decoration: none;
 }
 
 
@@ -363,29 +353,48 @@
    ========================================================= */
 
 .publisher-release-image {
-  align-self: stretch;
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  overflow: hidden;
+  width: 100%;
+  margin: 0;
 }
 
 .publisher-release-image img {
   display: block;
 
-  width: 100%;
-  height: 100%;
-  min-height: 390px;
+  width: 75%;
+  max-width: 380px;
+  height: auto;
+  max-height: 380px;
 
-  object-fit: cover;
-  object-position: center;
+  object-fit: contain;
+
+  transition: transform 0.2s ease;
+}
+
+
+/* Subtiel effect om duidelijk te maken dat het blok klikbaar is */
+
+.publisher-release-block:hover .publisher-release-cover img,
+.publisher-release-block:focus .publisher-release-cover img {
+  transform: translateY(-3px);
+
+  box-shadow: 0 16px 34px rgba(19, 34, 68, 0.24);
+}
+
+.publisher-release-block:hover .publisher-release-image img,
+.publisher-release-block:focus .publisher-release-image img {
+  transform: scale(1.01);
 }
 
 
 /* =========================================================
-   UITGAVE: TABLET EN MOBIEL
+   STAPELEN
    ========================================================= */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1050px) {
 
   .publisher-release {
     margin-top: 3.5rem;
@@ -393,69 +402,37 @@
   }
 
   .publisher-release-inner {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 42px;
+    grid-template-columns: 1fr;
+    gap: 44px;
 
     min-height: 0;
-    padding: 48px clamp(20px, 6vw, 56px);
+
+    padding: 52px 40px;
   }
 
-  /*
-   * Expliciete volgorde:
-   * 1. omslag
-   * 2. tekst
-   * 3. binnenbeeld
-   */
+
+  /* 1. omslag */
 
   .publisher-release-cover {
     order: 1;
   }
 
+  .publisher-release-cover img {
+    width: 100%;
+    max-width: 430px;
+  }
+
+
+  /* 2. tekst */
+
   .publisher-release-copy {
     order: 2;
 
     width: 100%;
-    max-width: 680px;
+    max-width: 640px;
+
     margin: 0 auto;
-  }
-
-  .publisher-release-image {
-    order: 3;
-
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .publisher-release-cover img {
-    max-height: 520px;
-  }
-
-  .publisher-release-title {
-    font-size: clamp(2rem, 7vw, 3rem) !important;
-  }
-
-  .publisher-release-image img {
-    height: auto;
-    min-height: 0;
-    max-height: none;
-
-    object-fit: contain;
-  }
-}
-
-
-@media screen and (max-width: 520px) {
-
-  .publisher-release-inner {
-    gap: 34px;
-    padding: 38px 20px;
-  }
-
-  .publisher-release-cover img {
-    width: 78vw;
-max-width: 330px;
-    max-height: none;
+    padding: 0;
   }
 
   .publisher-release-title {
@@ -463,21 +440,26 @@ max-width: 330px;
   }
 
   .publisher-release-description {
-    font-size: 1.05rem;
+    max-width: 38rem;
   }
 
-  .publisher-release-link {
+
+  /* 3. binnenbeeld */
+
+  .publisher-release-image {
+    order: 3;
+
     width: 100%;
-    text-align: center;
+    max-width: 640px;
+
+    margin: 0 auto;
   }
-}
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-.publisher-body .footer {
-  background: #fef0d2;
+  .publisher-release-image img {
+    width: 75%;
+    max-width: 440px;
+    max-height: none;
+  }
 }
 
 
@@ -533,4 +515,45 @@ max-width: 330px;
   .publisher-page h3 {
     font-size: 1.35rem;
   }
+
+
+  /* Uitgelichte uitgave */
+
+  .publisher-release-inner {
+    gap: 36px;
+    padding: 38px 20px;
+  }
+
+  .publisher-release-cover img {
+    width: 88vw;
+    max-width: 400px;
+  }
+
+  .publisher-release-title {
+    font-size: 1.8rem !important;
+    line-height: 1.16 !important;
+  }
+
+  .publisher-release-author {
+    margin-bottom: 1.35rem;
+    font-size: 1.2rem;
+  }
+
+  .publisher-release-description {
+    font-size: 1.05rem;
+  }
+
+  .publisher-release-image img {
+    width: 75%;
+    max-width: 380px;
+  }
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.publisher-body .footer {
+  background: #fef0d2;
 }

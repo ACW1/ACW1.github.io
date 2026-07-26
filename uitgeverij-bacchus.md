@@ -11,59 +11,48 @@ De eerste uitgave van Bacchus is *Mijnheer Pimpelmans heeft alweer pech* van G.T
 
 <section class="publisher-release">
 
-  <div class="publisher-release-inner">
+  <a
+    class="publisher-release-block"
+    href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629"
+    aria-label="Bekijk Mijnheer Pimpelmans heeft alweer pech">
 
-    <!-- OMSLAG -->
-    <figure class="publisher-release-cover">
-      <img
-        src="/assets/images/bacchus/pimpelmans-cover-placeholder.jpg"
-        alt="Omslag van Mijnheer Pimpelmans heeft alweer pech">
-    </figure>
+    <div class="publisher-release-inner">
 
-    <!-- TEKST -->
-    <div class="publisher-release-copy">
+      <!-- OMSLAG -->
+      <figure class="publisher-release-cover">
+        <img
+          src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/pimpelmans-cover.jpg"
+          alt="Omslag van Mijnheer Pimpelmans heeft alweer pech">
+      </figure>
 
-      <p class="publisher-release-label">
-        Eerste uitgave
-      </p>
+      <!-- TEKST -->
+      <div class="publisher-release-copy">
 
-      <h2 class="publisher-release-title">
-        Mijnheer Pimpelmans heeft alweer pech
-      </h2>
+        <h3 class="publisher-release-title">
+          Mijnheer Pimpelmans heeft alweer pech
+        </h3>
 
-      <p class="publisher-release-author">
-        G.Th. Rotman
-      </p>
+        <p class="publisher-release-author">
+          G.Th. Rotman
+        </p>
 
-      <p class="publisher-release-description">
-        Een nooit eerder in boekvorm verschenen beeldverhaal uit 1941,
-        zorgvuldig gereconstrueerd uit de best bewaard gebleven krantenafleveringen.
-      </p>
+        <p class="publisher-release-description">
+          Een nooit eerder in boekvorm verschenen beeldverhaal uit 1941,
+          zorgvuldig gereconstrueerd uit de best bewaard gebleven krantenafleveringen.
+        </p>
 
-      <!-- Later eventueel gebruiken -->
-      <!--
-      <blockquote class="publisher-release-quote">
-        “Hier komt later een aanprijzende quote.”
-        <cite>— Naam recensent of publicatie</cite>
-      </blockquote>
-      -->
+      </div>
 
-      <a
-        class="publisher-release-link"
-        href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629">
-        Bekijk het boek
-      </a>
+      <!-- BINNENBEELD -->
+      <figure class="publisher-release-image">
+        <img
+          src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/54.af.jpg"
+          alt="Afbeelding uit Mijnheer Pimpelmans heeft alweer pech">
+      </figure>
 
     </div>
 
-    <!-- BINNENBEELD -->
-    <figure class="publisher-release-image">
-      <img
-        src="/assets/images/bacchus/pimpelmans-binnenbeeld-placeholder.jpg"
-        alt="Afbeelding uit Mijnheer Pimpelmans heeft alweer pech">
-    </figure>
-
-  </div>
+  </a>
 
 </section>
 
