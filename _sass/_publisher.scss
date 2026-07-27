@@ -169,6 +169,8 @@
    ========================================================= */
 
 .publisher-page {
+  font-family: "Nobel", sans-serif;
+  font-weight: 400;
   width: 100%;
   max-width: 860px;
   margin: 0 auto;
@@ -208,6 +210,14 @@
 .publisher-page a:hover,
 .publisher-page a:focus {
   color: #132244;
+}
+
+.publisher-page h2,
+.publisher-page h3,
+.publisher-release-title,
+.publisher-release-author {
+  font-family: "Nobel", sans-serif;
+  font-weight: 600;
 }
 
 /* =========================================================
