@@ -7,9 +7,16 @@
    PAGINA
    ========================================================= */
 
-.publisher-body {
+html {
   margin: 0;
-  background: #fef0d2;
+  padding: 0;
+  background: #ea505a;
+}
+
+body.publisher-body {
+  margin: 0;
+  padding: 0;
+  background: #ea505a;
 }
 
 .publisher-main {
@@ -130,6 +137,12 @@
     box-shadow 0.2s ease;*/
 }
 
+.bacchus-logo-picture {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
 .publisher-wrapper {
   box-sizing: border-box;
   width: 100%;
@@ -141,7 +154,7 @@
 .publisher-hero {
   width: 100%;
   max-width: 1000px;
-  margin: 0 auto 58px;
+  margin: 0 auto 40px;
   text-align: center;
 }
 
@@ -150,7 +163,7 @@
   width: 100%;
   max-width: 760px;
   height: auto;
-  margin: -15px auto 28px;
+  margin: -15px auto 0;
 }
 
 .publisher-hero .page-intro {
@@ -177,7 +190,7 @@ font-style: normal;
   margin: 0 auto;
 
   color: #111111;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.7;
 }
 
@@ -222,22 +235,18 @@ font-style: normal;
 }
 
 /* =========================================================
-   EERSTE SCHERM
+   INTRODUCTIE
    ========================================================= */
 
 .publisher-introduction {
-  /*
-   * De beschikbare schermhoogte minus:
-   * 44 px rode banner
-   * 54 px bovenpadding van de wrapper
-   * circa 174 px logozone
-   * 58 px ruimte onder het logo
-   * 8 px zichtbaar wit randje
-   */
-  min-height: calc(100vh - 328px);
-
   box-sizing: border-box;
-  padding-bottom: 8px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.publisher-introduction p:last-child {
+  margin-bottom: 0;
 }
 
 /* =========================================================
@@ -251,7 +260,7 @@ font-style: normal;
 
   box-sizing: border-box;
   width: 100vw;
-  margin: 4.5rem 0;
+  margin: 0 0 4.5rem;
   margin-left: -50vw;
 
   background: #ffffff;
@@ -373,6 +382,28 @@ font-style: normal;
 
   font-size: 1.15rem;
   line-height: 1.55;
+}
+
+.publisher-release-button {
+  display: inline-block;
+
+  margin-top: 1.5rem;
+  padding: 0.45rem 1rem;
+
+  color: #132244 !important;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none !important;
+
+  border: 1px solid #132244;
+}
+
+.publisher-release-button:hover,
+.publisher-release-button:focus {
+  color: #ffffff !important;
+  background: #132244;
+  text-decoration: none !important;
 }
 
 
@@ -523,6 +554,10 @@ font-style: normal;
 
 @media screen and (max-width: 640px) {
 
+  /* =======================================================
+     BANNER
+     ======================================================= */
+
   .publisher-banner,
   .publisher-banner-inner,
   .publisher-home-link {
@@ -538,84 +573,306 @@ font-style: normal;
     font-size: 34px;
   }
 
-  .publisher-wrapper {
-    padding: 38px 20px 60px;
-  }
 
-  .publisher-hero {
-    margin-bottom: 40px;
-  }
+  /* =======================================================
+     BOVENSTE GEDEELTE
+     ======================================================= */
 
-  .bacchus-logo {
-    max-width: 100%;
-    margin-bottom: 22px;
-  }
 
-  .publisher-hero .page-intro {
-    font-size: 1.12rem;
-    line-height: 1.4;
-  }
+.publisher-wrapper {
+  padding: 16px 16px 44px;
+}
+
+.publisher-masthead {
+  width: 100%;
+  margin: 0 auto 12px;
+}
+
+.publisher-masthead img {
+  display: block;
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.publisher-hero {
+  width: 100%;
+  margin: 0 auto 16px;
+}
+
+.bacchus-logo-picture {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+
+.bacchus-logo {
+  display: block;
+  width: 86%;
+  max-width: 270px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.publisher-introduction {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.publisher-introduction p {
+  margin: 0;
+}
+
+  /* =======================================================
+     INHOUD EN INTRODUCTIE
+     ======================================================= */
 
   .publisher-page {
-    font-size: 1.05rem;
-    line-height: 1.65;
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 0.98rem;
+    line-height: 1.48;
+  }
+
+  .publisher-page p {
+    margin-bottom: 1rem;
+  }
+
+  .publisher-introduction {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .publisher-introduction p {
+    margin: 0;
   }
 
   .publisher-page h2 {
-    margin-top: 2.5rem;
-    font-size: 1.8rem;
+    margin-top: 2.2rem;
+    margin-bottom: 0.85rem;
+
+    font-size: 1.65rem;
+    line-height: 1.2;
   }
 
   .publisher-page h3 {
-    font-size: 1.35rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.45rem;
+
+    font-size: 1.2rem;
+    line-height: 1.25;
   }
 
-.publisher-introduction {
-  min-height: auto;
-  padding-bottom: 0;
-}
 
-.publisher-release {
-  margin-top: 3rem;
-}
+  /* =======================================================
+     UITGELICHTE UITGAVE
+     ======================================================= */
 
-  /* Uitgelichte uitgave */
+  .publisher-release {
+    margin-bottom: 0;
+  }
 
   .publisher-release-inner {
-    gap: 36px;
-    padding: 38px 20px;
+    grid-template-columns: 1fr;
+    gap: 0;
+
+    min-height: 0;
+
+    padding: 30px 16px 34px;
+  }
+
+
+  /* Omslag */
+
+  .publisher-release-cover {
+    order: 1;
+
+    width: 100%;
+    margin: 0 0 24px;
   }
 
   .publisher-release-cover img {
-    width: 88vw;
-    max-width: 400px;
+    width: 82vw;
+    max-width: 320px;
+    height: auto;
+  }
+
+
+  /* Tekst */
+
+  .publisher-release-copy {
+    order: 2;
+
+    width: 100%;
+    max-width: 340px;
+
+    margin: 0 auto 30px;
+    padding: 0;
+
+    transform: none !important;
   }
 
   .publisher-release-title {
-    font-size: 1.8rem !important;
-    line-height: 1.16 !important;
+    margin: 0 0 0.55rem !important;
+
+    font-size: 1.65rem !important;
+    line-height: 1.13 !important;
   }
 
   .publisher-release-author {
-    margin-bottom: 1.35rem;
-    font-size: 1.2rem;
+    margin: 0 0 0.9rem;
+
+    font-size: 1.08rem;
+    line-height: 1.3;
   }
 
   .publisher-release-description {
-    font-size: 1.05rem;
+    width: 100%;
+    max-width: none;
+    margin: 0 0 1rem;
+
+    font-size: 0.98rem;
+    line-height: 1.48;
+  }
+
+  .publisher-release-meta {
+    margin: 1rem 0 0;
+
+    color: #132244;
+
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  .publisher-release-button {
+    display: inline-block;
+
+    margin-top: 1rem;
+    padding: 0.4rem 0.85rem;
+
+    font-size: 0.9rem;
+  }
+
+
+  /* Binnenbeeld */
+
+  .publisher-release-image {
+    order: 3;
+
+    width: 100%;
+    max-width: 320px;
+
+    margin: 0 auto;
   }
 
   .publisher-release-image img {
-    width: 75%;
-    max-width: 380px;
+    width: 70%;
+    max-width: 260px;
+    height: auto;
+    max-height: none;
+  }
+
+
+  /* Eerste kop na het witte boekblok */
+
+  .publisher-release + h2 {
+    margin-top: 2rem;
+  }
+
+
+  /* =======================================================
+     FOOTER
+     ======================================================= */
+
+  .publisher-footer-link {
+    font-size: 0.8rem;
+  }
+
+  .publisher-footer-logo {
+    height: 1em;
+  }
+}
+  /* =======================================================
+     FOOTER
+     ======================================================= */
+
+
+  .publisher-footer-logo {
+    height: 1em;
   }
 }
 
+.publisher-footer {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ea505a;
+}
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
+.publisher-footer .publisher-banner {
+  margin: 0;
+  padding: 0;
+  background: #ea505a;
+}
 
-.publisher-body .footer {
-  background: #fef0d2;
+.publisher-footer-link {
+   font-size: 0.8rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  color: #ffffff !important;
+  font-size: smaller;
+  line-height: 1;
+  text-decoration: none !important;
+
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.publisher-footer-link:hover,
+.publisher-footer-link:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  opacity: 0.65;
+}
+
+.publisher-footer-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: -4px;
+}
+
+.publisher-footer-powered {
+  display: block;
+  line-height: 1;
+}
+
+.publisher-footer-logo {
+  display: block;
+
+  width: auto;
+  height: 1em;
+  margin-left: 0.3em;
+
+  object-fit: contain;
+
+  /*
+   * Maakt een donker, transparant logo wit.
+   */
+  filter: brightness(0) invert(1);
 }

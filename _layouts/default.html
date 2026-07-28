@@ -23,19 +23,52 @@
     {{ content }}
 
     <!-- {% include menu.html %} -->
-    {% unless paginator.total_pages > 1 %} 
-    {% unless site.hide_credits %}
+  {% unless paginator.total_pages > 1 %}
+  {% unless site.hide_credits %}
+
+    {% if page.layout == "uitgeverij-bacchus" %}
+
+      <footer class="publisher-footer">
+        <div class="publisher-banner">
+          <div class="publisher-banner-inner">
+
+            <a
+  class="publisher-footer-link"
+  href="{{ '/' | prepend: site.baseurl }}"
+  title="Naar de homepage van TUUR"
+  aria-label="Naar de homepage van TUUR">
+
+  <span class="publisher-footer-powered">Powered by</span>
+
+  <img
+    class="publisher-footer-logo"
+    src="{{ site.baseurl }}/assets/images/tuur-logo6.png"
+    alt=""
+    aria-hidden="true">
+
+</a>
+
+          </div>
+        </div>
+      </footer>
+
+    {% else %}
+
       <div class="push"></div>
-    </div>
-    <footer class="footer footer-low">
-      <aside class="site-credits">
-        <p>
-          <small>Kijkt | Vraagt | Schrijft</small>
-        </p>
-      </aside>
-    </footer>
-    {% endunless %}
-    {% endunless %} 
+      </div>
+
+      <footer class="footer footer-low">
+        <aside class="site-credits">
+          <p>
+            <small>Kijkt | Vraagt | Schrijft</small>
+          </p>
+        </aside>
+      </footer>
+
+    {% endif %}
+
+  {% endunless %}
+{% endunless %}
     <!-- Onderstaande div sluit de band-div in home.html -->
 
     </main>

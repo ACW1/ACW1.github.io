@@ -8,27 +8,22 @@ bacchus_logo: /assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus.png
 <div class="publisher-introduction">
 
   <p>
-    Uitgeverij Bacchus is opgericht voor de publicatie van bijzondere werken
-    die ten onrechte uit beeld zijn geraakt. De nadruk ligt daarbij op een
-    zorgvuldige reconstructie van het oorspronkelijke materiaal, een passende
-    vormgeving en voldoende historische context.
+    Uitgeverij Bacchus werd in mei 2026 opgericht om de bal op te pakken die Uitgeverij Apollo (Den Haag) had laten liggen: de uitgave in boekvorm van G.Th. Rotmans beeldverhaal <i>Mijnheer Pimpelmans heeft alweer pech</i>. Daar gaan we nu op drinken. Later wellicht meer. 
   </p>
 
-  <p>
+  <!-- <p>
     De eerste uitgave van Bacchus is
     <em>Mijnheer Pimpelmans heeft alweer pech</em> van G.Th. Rotman,
     een beeldverhaal dat oorspronkelijk in verschillende kranten verscheen
     en nooit eerder in boekvorm werd uitgebracht.
-  </p>
+  </p> -->
 
 </div>
 
 <section class="publisher-release">
 
-  <a
-    class="publisher-release-block"
-    href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629"
-    aria-label="Bekijk Mijnheer Pimpelmans heeft alweer pech">
+  <div
+    class="publisher-release-block">
 
     <div class="publisher-release-inner">
 
@@ -52,6 +47,19 @@ bacchus_logo: /assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus.png
           In 1941 werd het laatste verhaal van Rotmans Pimpelmansreeks
           in de krant gepubliceerd. Anders dan de vijf voorgaande verhalen verscheen het nooit in boekvorm — tot nu toe.
         </p>
+        <p class="publisher-release-meta">
+  <em>Hardcover</em><br>
+  ISBN: 9789465338194<br>
+  Prijs: € 31,50<br>
+  Publicatiedatum: 01-08-2026
+</p>
+
+<a
+  class="publisher-release-button"
+  href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629"
+  aria-label="Bestel Mijnheer Pimpelmans heeft alweer pech">
+  Bestel
+</a>
 
       </div>
 
@@ -63,7 +71,7 @@ bacchus_logo: /assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus.png
 
     </div>
 
-  </a>
+  </div>
 
 </section>
 

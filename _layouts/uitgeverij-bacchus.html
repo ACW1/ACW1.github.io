@@ -29,17 +29,25 @@ layout: default
   <div class="publisher-wrapper">
      <figure class="publisher-masthead">
         <img
-          src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/Bacchus-presents-2.png"
+          src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/Bacchus-presents-3.png"
           alt="Bacchus presents book">
       </figure>
 
     <section class="publisher-hero">
 
       {% if page.bacchus_logo %}
-        <img
-          class="bacchus-logo"
-          src="{{ site.baseurl }}{{ page.bacchus_logo }}"
-          alt="Uitgeverij Bacchus">
+        <picture class="bacchus-logo-picture">
+
+  <source
+    media="(max-width: 640px)"
+    srcset="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus-mobiel-2.png">
+
+  <img
+    class="bacchus-logo"
+    src="{{ site.baseurl }}{{ page.bacchus_logo }}"
+    alt="Uitgeverij Bacchus, Rotterdam">
+
+</picture>
       {% endif %}
 
       {% if page.subtitle %}
@@ -58,35 +66,102 @@ layout: default
 </main>
 
 <script>
-  function centerPublisherCopyBetweenImages() {
-    const cover = document.querySelector(".publisher-release-cover img");
-    const copy = document.querySelector(".publisher-release-copy");
-    const insideImage = document.querySelector(".publisher-release-image img");
+  (() => {
+    const mobileQuery = window.matchMedia("(max-width: 640px)");
+    const stackedQuery = window.matchMedia("(max-width: 1050px)");
 
-    if (!cover || !copy || !insideImage) return;
+    function positionPublisherReleaseAtFold() {
+  const release = document.querySelector(".publisher-release");
 
-    if (window.matchMedia("(max-width: 1050px)").matches) {
+  if (!release) return;
+
+  /*
+   * Eerst zonder kunstmatige marge meten.
+   */
+  release.style.marginTop = "0px";
+
+  const visibleWhiteStrip = 32;
+
+  /*
+   * Op mobiel moet er altijd minimaal 24 px beige ruimte
+   * tussen de introductie en het witte boekblok blijven.
+   */
+  const minimumGap = mobileQuery.matches ? 24 : 0;
+
+  const naturalDocumentTop =
+    release.getBoundingClientRect().top + window.scrollY;
+
+  const desiredDocumentTop =
+    window.innerHeight - visibleWhiteStrip;
+
+  const requiredMargin = Math.max(
+    minimumGap,
+    desiredDocumentTop - naturalDocumentTop
+  );
+
+  release.style.marginTop = requiredMargin + "px";
+}
+
+    function centerPublisherCopyBetweenImages() {
+      const cover =
+        document.querySelector(".publisher-release-cover img");
+
+      const copy =
+        document.querySelector(".publisher-release-copy");
+
+      const insideImage =
+        document.querySelector(".publisher-release-image img");
+
+      if (!cover || !copy || !insideImage) return;
+
+      if (stackedQuery.matches) {
+        copy.style.transform = "none";
+        return;
+      }
+
       copy.style.transform = "none";
-      return;
+
+      const coverRect = cover.getBoundingClientRect();
+      const copyRect = copy.getBoundingClientRect();
+      const imageRect = insideImage.getBoundingClientRect();
+
+      const targetCenter =
+        coverRect.right +
+        (imageRect.left - coverRect.right) / 2;
+
+      const copyCenter =
+        copyRect.left + copyRect.width / 2;
+
+      const shift = targetCenter - copyCenter;
+
+      copy.style.transform =
+        "translateX(" + shift + "px)";
     }
 
-    copy.style.transform = "none";
+    function updatePublisherLayout() {
+      window.requestAnimationFrame(() => {
+        positionPublisherReleaseAtFold();
+        centerPublisherCopyBetweenImages();
+      });
+    }
 
-    const coverRect = cover.getBoundingClientRect();
-    const copyRect = copy.getBoundingClientRect();
-    const imageRect = insideImage.getBoundingClientRect();
+    window.addEventListener("load", updatePublisherLayout);
+    window.addEventListener("resize", updatePublisherLayout);
 
-    const targetCenter =
-      coverRect.right + (imageRect.left - coverRect.right) / 2;
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(updatePublisherLayout);
+    }
 
-    const copyCenter =
-      copyRect.left + copyRect.width / 2;
-
-    const shift = targetCenter - copyCenter;
-
-    copy.style.transform = `translateX(${shift}px)`;
-  }
-
-  window.addEventListener("load", centerPublisherCopyBetweenImages);
-  window.addEventListener("resize", centerPublisherCopyBetweenImages);
+    document
+      .querySelectorAll(
+        ".publisher-masthead img, " +
+        ".publisher-hero img, " +
+        ".publisher-release img"
+      )
+      .forEach((image) => {
+        if (!image.complete) {
+          image.addEventListener("load", updatePublisherLayout);
+        }
+      });
+  })();
 </script>
