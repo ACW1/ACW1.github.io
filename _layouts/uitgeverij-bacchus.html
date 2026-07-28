@@ -4,10 +4,10 @@ layout: default
 
 <body class="publisher-body">
 
-<header class="publisher-banner">
-  <div class="publisher-banner-inner">
+  <header class="publisher-banner">
+    <div class="publisher-banner-inner">
 
-    <a
+      <a
       class="publisher-home-link"
       href="{{ '/' | prepend: site.baseurl }}"
       title="Naar de homepage van TUUR"
@@ -21,48 +21,48 @@ layout: default
 </header>
 
 <main
-  id="main"
-  class="publisher-main"
-  role="main"
-  aria-label="Content">
+id="main"
+class="publisher-main"
+role="main"
+aria-label="Content">
 
-  <div class="publisher-wrapper">
-     <figure class="publisher-masthead">
-        <img
-          src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/Bacchus-presents-3.png"
-          alt="Bacchus presents book">
-      </figure>
+<div class="publisher-wrapper">
+ <figure class="publisher-masthead">
+  <img
+  src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/Bacchus-presents-2.png"
+  alt="Bacchus presents book">
+</figure>
 
-    <section class="publisher-hero">
+<section class="publisher-hero">
 
-      {% if page.bacchus_logo %}
-        <picture class="bacchus-logo-picture">
+  {% if page.bacchus_logo %}
+  <picture class="bacchus-logo-picture">
 
-  <source
+    <source
     media="(max-width: 640px)"
     srcset="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus-mobiel-2.png">
 
-  <img
+    <img
     class="bacchus-logo"
     src="{{ site.baseurl }}{{ page.bacchus_logo }}"
     alt="Uitgeverij Bacchus, Rotterdam">
 
-</picture>
-      {% endif %}
+  </picture>
+  {% endif %}
 
-      {% if page.subtitle %}
-        <p class="page-intro">
-          {{ page.subtitle }}
-        </p>
-      {% endif %}
+  {% if page.subtitle %}
+  <p class="page-intro">
+    {{ page.subtitle }}
+  </p>
+  {% endif %}
 
-    </section>
+</section>
 
-    <article class="publisher-page">
-      {{ content }}
-    </article>
+<article class="publisher-page">
+  {{ content }}
+</article>
 
-      </div>
+</div>
 </main>
 
 <script>
@@ -70,23 +70,27 @@ layout: default
     const mobileQuery = window.matchMedia("(max-width: 640px)");
     const stackedQuery = window.matchMedia("(max-width: 1050px)");
 
-    function positionPublisherReleaseAtFold() {
+   function positionPublisherReleaseAtFold() {
   const release = document.querySelector(".publisher-release");
 
   if (!release) return;
 
-  /*
-   * Eerst zonder kunstmatige marge meten.
-   */
   release.style.marginTop = "0px";
 
-  const visibleWhiteStrip = 32;
+  /*
+   * Op mobiel geen positionering ten opzichte van de vouw.
+   * Gewoon 24 px ruimte na de introductietekst.
+   */
+  if (mobileQuery.matches) {
+    release.style.marginTop = "24px";
+    return;
+  }
 
   /*
-   * Op mobiel moet er altijd minimaal 24 px beige ruimte
-   * tussen de introductie en het witte boekblok blijven.
+   * Alleen op grotere schermen het boekblok
+   * bij de onderkant van het eerste scherm plaatsen.
    */
-  const minimumGap = mobileQuery.matches ? 24 : 0;
+  const visibleWhiteStrip = 32;
 
   const naturalDocumentTop =
     release.getBoundingClientRect().top + window.scrollY;
@@ -95,7 +99,7 @@ layout: default
     window.innerHeight - visibleWhiteStrip;
 
   const requiredMargin = Math.max(
-    minimumGap,
+    0,
     desiredDocumentTop - naturalDocumentTop
   );
 
@@ -104,13 +108,13 @@ layout: default
 
     function centerPublisherCopyBetweenImages() {
       const cover =
-        document.querySelector(".publisher-release-cover img");
+      document.querySelector(".publisher-release-cover img");
 
       const copy =
-        document.querySelector(".publisher-release-copy");
+      document.querySelector(".publisher-release-copy");
 
       const insideImage =
-        document.querySelector(".publisher-release-image img");
+      document.querySelector(".publisher-release-image img");
 
       if (!cover || !copy || !insideImage) return;
 
@@ -126,16 +130,16 @@ layout: default
       const imageRect = insideImage.getBoundingClientRect();
 
       const targetCenter =
-        coverRect.right +
-        (imageRect.left - coverRect.right) / 2;
+      coverRect.right +
+      (imageRect.left - coverRect.right) / 2;
 
       const copyCenter =
-        copyRect.left + copyRect.width / 2;
+      copyRect.left + copyRect.width / 2;
 
       const shift = targetCenter - copyCenter;
 
       copy.style.transform =
-        "translateX(" + shift + "px)";
+      "translateX(" + shift + "px)";
     }
 
     function updatePublisherLayout() {
@@ -153,15 +157,15 @@ layout: default
     }
 
     document
-      .querySelectorAll(
-        ".publisher-masthead img, " +
-        ".publisher-hero img, " +
-        ".publisher-release img"
+    .querySelectorAll(
+      ".publisher-masthead img, " +
+      ".publisher-hero img, " +
+      ".publisher-release img"
       )
-      .forEach((image) => {
-        if (!image.complete) {
-          image.addEventListener("load", updatePublisherLayout);
-        }
-      });
+    .forEach((image) => {
+      if (!image.complete) {
+        image.addEventListener("load", updatePublisherLayout);
+      }
+    });
   })();
 </script>

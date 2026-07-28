@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-  <head>
-    
-    {% include _head.html %}
+<head>
+  
+  {% include _head.html %}
 
-  </head>
+</head>
 
-    {% include backimg.html %}
+{% include backimg.html %}
 
-    {% include sidebar.html %}
-    
+{% include sidebar.html %}
+
    <!--  {% if page.layout == 'home' %}
       <a href="#main" class="skip-navigation">
         Skip to list of posts
@@ -18,84 +18,84 @@
       <a href="#main" class="skip-navigation">
         Skip to content
       </a>
-    {% endif %} -->
+      {% endif %} -->
 
-    {{ content }}
+      {{ content }}
 
-    <!-- {% include menu.html %} -->
-  {% unless paginator.total_pages > 1 %}
-  {% unless site.hide_credits %}
+      <!-- {% include menu.html %} -->
+      {% unless paginator.total_pages > 1 %}
+      {% unless site.hide_credits %}
 
-    {% if page.layout == "uitgeverij-bacchus" %}
+      {% if page.layout == "uitgeverij-bacchus" %}
 
       <footer class="publisher-footer">
         <div class="publisher-banner">
           <div class="publisher-banner-inner">
 
             <a
-  class="publisher-footer-link"
-  href="{{ '/' | prepend: site.baseurl }}"
-  title="Naar de homepage van TUUR"
-  aria-label="Naar de homepage van TUUR">
+            class="publisher-footer-link"
+            href="{{ '/' | prepend: site.baseurl }}"
+            title="Naar de homepage van TUUR"
+            aria-label="Naar de homepage van TUUR">
 
-  <span class="publisher-footer-powered">Powered by</span>
+            <span class="publisher-footer-powered">Powered by</span>
 
-  <img
-    class="publisher-footer-logo"
-    src="{{ site.baseurl }}/assets/images/tuur-logo6.png"
-    alt=""
-    aria-hidden="true">
+            <img
+            class="publisher-footer-logo"
+            src="{{ site.baseurl }}/assets/images/tuur-logo6.png"
+            alt=""
+            aria-hidden="true">
 
-</a>
+          </a>
 
-          </div>
         </div>
-      </footer>
+      </div>
+    </footer>
 
     {% else %}
 
-      <div class="push"></div>
-      </div>
+    <div class="push"></div>
+  </div>
 
-      <footer class="footer footer-low">
-        <aside class="site-credits">
-          <p>
-            <small>Kijkt | Vraagt | Schrijft</small>
-          </p>
-        </aside>
-      </footer>
+  <footer class="footer footer-low">
+    <aside class="site-credits">
+      <p>
+        <small>Kijkt | Vraagt | Schrijft</small>
+      </p>
+    </aside>
+  </footer>
 
-    {% endif %}
+  {% endif %}
 
   {% endunless %}
-{% endunless %}
-    <!-- Onderstaande div sluit de band-div in home.html -->
+  {% endunless %}
+  <!-- Onderstaande div sluit de band-div in home.html -->
 
-    </main>
-    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/sidebar.js"></script>
-    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/lightbox.js"></script>
-    <script src="{{ site.url }}{{ site.baseurl }}/assets/js/bgcolor.js"></script>
-    <!-- switch logo on scroll -->
-    <script type="text/javascript">
-      var lastScrollTop = 0;
-      window.addEventListener("scroll", function(){ 
-         var st = window.pageYOffset || document.documentElement.scrollTop;
-         if (st > lastScrollTop){
-             document.getElementById("logo").src = "{{ site.url }}{{ site.baseurl }}/assets/images/tuur-logo9.png"; 
-         } else {
-            document.getElementById("logo").src = "{{ site.url }}{{ site.baseurl }}/assets/images/tuur-logo6.png";
-         }
+</main>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/sidebar.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/lightbox.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/assets/js/bgcolor.js"></script>
+<!-- switch logo on scroll -->
+<script type="text/javascript">
+  var lastScrollTop = 0;
+  window.addEventListener("scroll", function(){ 
+   var st = window.pageYOffset || document.documentElement.scrollTop;
+   if (st > lastScrollTop){
+     document.getElementById("logo").src = "{{ site.url }}{{ site.baseurl }}/assets/images/tuur-logo9.png"; 
+   } else {
+    document.getElementById("logo").src = "{{ site.url }}{{ site.baseurl }}/assets/images/tuur-logo6.png";
+  }
          lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-      }, false);
-    </script>
-    <script>
-        lightbox.option({
-          'wrapAround': true
-        })
+       }, false);
+     </script>
+     <script>
+      lightbox.option({
+        'wrapAround': true
+      })
     </script>
     <script type="text/javascript">$(document).ready(function() {
-        $(document).foundation(); });
+      $(document).foundation(); });
     </script>
     {% include lazyload.html %}
   </body>
-</html>
+  </html>

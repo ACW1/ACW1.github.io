@@ -2,7 +2,7 @@
 layout: uitgeverij-bacchus
 # subtitle: Een onafhankelijk uitgeverslabel voor bijzondere heruitgaven
 permalink: /uitgeverij-bacchus/
-bacchus_logo: /assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus.png
+bacchus_logo: /assets/images/uitgeverij-bacchus/woordmerk.png
 ---
 
 <div class="publisher-introduction">
@@ -23,55 +23,55 @@ bacchus_logo: /assets/images/uitgeverij-bacchus/Uitgeverij-Bacchus.png
 <section class="publisher-release">
 
   <div
-    class="publisher-release-block">
+  class="publisher-release-block">
 
-    <div class="publisher-release-inner">
+  <div class="publisher-release-inner">
 
-      <figure class="publisher-release-cover">
-        <img
-          src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/pimpelmans-cover.jpg"
-          alt="Omslag van Mijnheer Pimpelmans heeft alweer pech">
-      </figure>
+    <figure class="publisher-release-cover">
+      <img
+      src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/pimpelmans-cover.jpg"
+      alt="Omslag van Mijnheer Pimpelmans heeft alweer pech">
+    </figure>
 
-      <div class="publisher-release-copy">
+    <div class="publisher-release-copy">
 
-        <h3 class="publisher-release-title">
-          Mijnheer Pimpelmans heeft alweer pech
-        </h3>
+      <h3 class="publisher-release-title">
+        Mijnheer Pimpelmans heeft alweer pech
+      </h3>
 
-        <p class="publisher-release-author">
-          G.Th. Rotman
-        </p>
+      <p class="publisher-release-author">
+        G.Th. Rotman
+      </p>
 
-        <p class="publisher-release-description">
-          In 1941 werd het laatste verhaal van Rotmans Pimpelmansreeks
-          in de krant gepubliceerd. Anders dan de vijf voorgaande verhalen verscheen het nooit in boekvorm — tot nu toe.
-        </p>
-        <p class="publisher-release-meta">
-  <em>Hardcover</em><br>
-  ISBN: 9789465338194<br>
-  Prijs: € 31,50<br>
-  Publicatiedatum: 01-08-2026
-</p>
+      <p class="publisher-release-description">
+        In 1941 werd het laatste verhaal van Rotmans Pimpelmansreeks
+        in de krant gepubliceerd. Anders dan de vijf voorgaande verhalen verscheen het nooit in boekvorm — tot nu toe.
+      </p>
+      <p class="publisher-release-meta">
+        <em>Hardcover</em><br>
+        ISBN: 9789465338194<br>
+        Prijs: € 31,50<br>
+        Publicatiedatum: 01-08-2026
+      </p>
 
-<a
-  class="publisher-release-button"
-  href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629"
-  aria-label="Bestel Mijnheer Pimpelmans heeft alweer pech">
-  Bestel
-</a>
-
-      </div>
-
-      <figure class="publisher-release-image">
-        <img
-          src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/54.af.jpg"
-          alt="Afbeelding uit Mijnheer Pimpelmans heeft alweer pech">
-      </figure>
-
-    </div>
+      <a
+      class="publisher-release-button"
+      href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629"
+      aria-label="Bestel Mijnheer Pimpelmans heeft alweer pech">
+      Bestel
+    </a>
 
   </div>
+
+  <figure class="publisher-release-image">
+    <img
+    src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/54.af.jpg"
+    alt="Afbeelding uit Mijnheer Pimpelmans heeft alweer pech">
+  </figure>
+
+</div>
+
+</div>
 
 </section>
 
