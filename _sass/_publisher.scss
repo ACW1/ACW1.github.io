@@ -623,18 +623,21 @@
 
     .bacchus-logo {
       display: block;
-      width: 86%;
+      width: 60%;
       max-width: 270px;
       height: auto;
       margin: 0 auto;
     }
 
     .publisher-introduction {
+      font-size: 1.15rem;
+      line-height: 1.55;
       box-sizing: border-box;
       width: 100%;
       max-width: 340px;
       margin: 0 auto;
       padding: 0;
+      transform: translateY(-10px);
     }
 
     .publisher-introduction p {
