@@ -46,67 +46,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: 44px;
     margin: 0;
     padding: 0;
   }
 
+  .publisher-home-link {
+    all: unset;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    cursor: pointer;
+  }
 
-/* De asterisk is een gewone link naar de TUUR-homepage */
+  .publisher-home-link:hover,
+  .publisher-home-link:focus {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.8;
+  }
 
-.publisher-home-link {
-  all: unset;
+  .publisher-home-link:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: -4px;
+  }
 
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 44px;
-  height: 44px;
-  margin: 0;
-  padding: 0;
-
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.publisher-home-link:hover,
-.publisher-home-link:focus {
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.8;
-}
-
-.publisher-home-link:focus-visible {
-  outline: 2px solid #ffffff;
-  outline-offset: -4px;
-}
-
-
-/* De oorspronkelijke TUUR-asterisk */
-
-.publisher-asterisk-glyph {
-  display: block;
-  box-sizing: content-box;
-
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 13.06px 0 0;
-
-  color: #ffffff;
-
-  font-family: Didot, "Bodoni 72", serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: bold;
-  line-height: 1;
-
-  text-align: center;
-}
+  .publisher-asterisk-glyph {
+    display: block;
+    box-sizing: content-box;
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 13.06px 0 0;
+    color: #fef0d2;
+    font-family: Didot, "Bodoni 72", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+  }
 
 
 /* =========================================================
@@ -123,18 +109,10 @@
 
   .publisher-masthead img {
     display: block;
-
     width: 100%;
     max-width: 330px;
     height: auto;
-
     object-fit: contain;
-
-  /*box-shadow: 0 12px 28px rgba(19, 34, 68, 0.18);
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;*/
   }
 
   .bacchus-logo-picture {
@@ -148,7 +126,7 @@
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
-    padding: 32px 32px 80px;
+    padding: 32px 32px 32px;
   }
 
   .publisher-hero {
@@ -170,7 +148,6 @@
     width: 100%;
     max-width: 760px;
     margin: 0 auto;
-
     color: #8b2a19;
     font-size: 1.35rem;
     line-height: 1.45;
@@ -182,15 +159,14 @@
    ========================================================= */
 
    .publisher-page {
-    font-family: "nobel", sans-serif;
-    font-weight: 300;
-    font-style: normal;
     width: 100%;
     max-width: 860px;
     margin: 0 auto;
-
-    color: #111111;
+    color: #132244;
+    font-family: "nobel", sans-serif;
     font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
     line-height: 1.7;
   }
 
@@ -200,21 +176,19 @@
 
   .publisher-page h2 {
     margin: 3rem 0 1rem;
-
     color: #132244;
     font-size: 2.2rem;
-    line-height: 1.2;
     font-weight: normal;
+    line-height: 1.2;
     text-align: left;
   }
 
   .publisher-page h3 {
     margin: 2rem 0 0.5rem;
-
     color: #132244;
     font-size: 1.5rem;
-    line-height: 1.3;
     font-weight: normal;
+    line-height: 1.3;
   }
 
   .publisher-page a {
@@ -234,6 +208,7 @@
     font-weight: 600;
   }
 
+
 /* =========================================================
    INTRODUCTIE
    ========================================================= */
@@ -249,65 +224,51 @@
     margin-bottom: 0;
   }
 
+
 /* =========================================================
    UITGELICHTE UITGAVE
    ========================================================= */
 
-
    .publisher-release {
     position: relative;
     left: 50%;
-
     box-sizing: border-box;
     width: 100vw;
     margin: 0 0 4.5rem;
     margin-left: -50vw;
-
     background: #ffffff;
   }
 
+  .publisher-release-block {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: inherit !important;
+    text-decoration: none !important;
+  }
 
-/* Het volledige blok is klikbaar */
+  .publisher-release-block:hover,
+  .publisher-release-block:focus {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
 
-.publisher-release-block {
-  display: block;
-
-  width: 100%;
-  margin: 0;
-  padding: 0;
-
-  color: inherit !important;
-  text-decoration: none !important;
-}
-
-.publisher-release-block:hover,
-.publisher-release-block:focus {
-  color: inherit !important;
-  text-decoration: none !important;
-}
-
-
-/* Drie kolommen */
-
-.publisher-release-inner {
-  box-sizing: border-box;
-  display: grid;
-
-  grid-template-columns:
-  minmax(320px, 1fr)
-  minmax(320px, 0.95fr)
-  minmax(320px, 1fr);
-
-  align-items: center;
-  gap: 52px;
-
-  width: 100%;
-  max-width: 1540px;
-  min-height: 500px;
-
-  margin: 0 auto;
-  padding: 58px 64px;
-}
+  .publisher-release-inner {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns:
+    minmax(320px, 1fr)
+    minmax(320px, 0.95fr)
+    minmax(320px, 1fr);
+    align-items: center;
+    gap: 52px;
+    width: 100%;
+    max-width: 1540px;
+    min-height: 500px;
+    margin: 0 auto;
+    padding: 58px 64px;
+  }
 
 
 /* =========================================================
@@ -318,22 +279,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     margin: 0;
   }
 
   .publisher-release-cover img {
     display: block;
-
     width: 100%;
     max-width: 420px;
     height: auto;
-
     object-fit: contain;
-
     box-shadow: 0 12px 28px rgba(19, 34, 68, 0.18);
-
     transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
@@ -345,33 +301,27 @@
    ========================================================= */
 
    .publisher-release-copy {
-  align-self: center;
-
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
+    align-self: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
   .publisher-release-title {
     margin: 0 0 0.75rem !important;
-
     color: #132244 !important;
-
     font-size: 2rem !important;
-    line-height: 1.16 !important;
     font-weight: 600 !important;
+    line-height: 1.16 !important;
     text-align: left !important;
   }
 
   .publisher-release-author {
     margin: 0 0 1.7rem;
-
     color: #8f3319;
-
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.3;
@@ -380,42 +330,63 @@
   .publisher-release-description {
     max-width: 31rem;
     margin: 0;
-
     color: #132244;
-
     font-size: 1.15rem;
     line-height: 1.55;
   }
 
   .publisher-release-meta {
-  margin: 1.5rem 0 0;
+    margin: 1.5rem 0 0;
+    color: #132244;
+    font-size: 1.15rem;
+    line-height: 1.55;
+  }
 
-  color: #132244;
+  .publisher-release-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
 
-  font-size: 1.15rem;
-  line-height: 1.55;
-}
+  .publisher-release-button,
+  .publisher-release-info-button {
+    display: inline-block;
+    padding: 0.45rem 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none !important;
+    border: 1px solid #132244;
+    cursor: pointer;
+    transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
+  }
 
   .publisher-release-button {
-  display: inline-block;
-  align-self: center;
-
-  margin-top: 1.5rem;
-  padding: 0.45rem 1rem;
-
-  color: #132244 !important;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.2;
-  text-decoration: none !important;
-
-  border: 1px solid #132244;
-}
+    color: #ffffff !important;
+    background-color: #132244;
+  }
 
   .publisher-release-button:hover,
-  .publisher-release-button:focus {
+  .publisher-release-button:focus-visible {
+    color: #132244 !important;
+    background-color: #ffffff;
+    text-decoration: none !important;
+  }
+
+  .publisher-release-info-button {
+    color: #132244 !important;
+    background-color: transparent;
+  }
+
+  .publisher-release-info-button:hover,
+  .publisher-release-info-button:focus-visible {
     color: #ffffff !important;
-    background: #132244;
+    background-color: #132244;
     text-decoration: none !important;
   }
 
@@ -425,22 +396,17 @@
 .publisher-release-quote {
   margin: 2rem 0 0;
   padding: 0;
-
   color: #132244;
-
   font-size: 1.12rem;
-  line-height: 1.5;
   font-style: italic;
-
+  line-height: 1.5;
   border: 0;
 }
 
 .publisher-release-quote cite {
   display: block;
   margin-top: 0.6rem;
-
   color: #ea505a;
-
   font-size: 0.9rem;
   font-style: normal;
 }
@@ -450,43 +416,60 @@
    BINNENBEELD
    ========================================================= */
 
-   .publisher-release-image {
+   .publisher-release-image,
+   .publisher-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     margin: 0;
   }
 
   .publisher-release-image img {
     display: block;
-
     width: 75%;
     max-width: 380px;
     height: auto;
     max-height: 380px;
-
     object-fit: contain;
-
     transition: transform 0.2s ease;
   }
 
+  .publisher-icon img {
+    display: block;
+    width: 75%;
+    max-width: 380px;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+/*    transition: transform 0.2s ease;*/
+  }
 
-/* Subtiel effect om duidelijk te maken dat het blok klikbaar is */
+  .publisher-release-block:hover .publisher-release-cover img,
+  .publisher-release-block:focus .publisher-release-cover img {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 34px rgba(19, 34, 68, 0.24);
+  }
 
-.publisher-release-block:hover .publisher-release-cover img,
-.publisher-release-block:focus .publisher-release-cover img {
-  transform: translateY(-3px);
+  .publisher-release-block:hover .publisher-release-image img,
+  .publisher-release-block:focus .publisher-release-image img {
+    transform: scale(1.01);
+  }
 
-  box-shadow: 0 16px 34px rgba(19, 34, 68, 0.24);
-}
+  .publisher-contact {
+    width: 100%;
+    margin: 4rem auto 0;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-.publisher-release-block:hover .publisher-release-image img,
-.publisher-release-block:focus .publisher-release-image img {
-  transform: scale(1.01);
-}
+  .publisher-contact p {
+    margin: 0 0 1rem;
+  }
 
+  .publisher-contact-button {
+    display: inline-block;
+  }
 
 /* =========================================================
    STAPELEN
@@ -502,14 +485,9 @@
     .publisher-release-inner {
       grid-template-columns: 1fr;
       gap: 44px;
-
       min-height: 0;
-
       padding: 52px 40px;
     }
-
-
-    /* 1. omslag */
 
     .publisher-release-cover {
       order: 1;
@@ -520,15 +498,10 @@
       max-width: 430px;
     }
 
-
-    /* 2. tekst */
-
     .publisher-release-copy {
       order: 2;
-
       width: 100%;
       max-width: 640px;
-
       margin: 0 auto;
       padding: 0;
     }
@@ -541,15 +514,10 @@
       max-width: 38rem;
     }
 
-
-    /* 3. binnenbeeld */
-
     .publisher-release-image {
       order: 3;
-
       width: 100%;
       max-width: 640px;
-
       margin: 0 auto;
     }
 
@@ -567,13 +535,9 @@
 
    @media screen and (max-width: 640px) {
 
-  /* =======================================================
-     BANNER
-     ======================================================= */
-
-     .publisher-banner,
-     .publisher-banner-inner,
-     .publisher-home-link {
+    .publisher-banner,
+    .publisher-banner-inner,
+    .publisher-home-link {
       height: 42px;
     }
 
@@ -586,14 +550,8 @@
       font-size: 34px;
     }
 
-
-  /* =======================================================
-     BOVENSTE GEDEELTE
-     ======================================================= */
-
-
-     .publisher-wrapper {
-      padding: 16px 16px 44px;
+    .publisher-wrapper {
+      padding: 16px 16px 0px;
     }
 
     .publisher-masthead {
@@ -629,29 +587,9 @@
       margin: 0 auto;
     }
 
-    .publisher-introduction {
-      font-size: 1.15rem;
-      line-height: 1.55;
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 340px;
-      margin: 0 auto;
-      padding: 0;
-      transform: translateY(-10px);
-    }
-
-    .publisher-introduction p {
-      margin: 0;
-    }
-
-  /* =======================================================
-     INHOUD EN INTRODUCTIE
-     ======================================================= */
-
-     .publisher-page {
+    .publisher-page {
       width: 100%;
       max-width: 100%;
-
       font-size: 0.98rem;
       line-height: 1.48;
     }
@@ -666,6 +604,9 @@
       max-width: 340px;
       margin: 0 auto;
       padding: 0;
+      font-size: 1.15rem;
+      line-height: 1.55;
+      transform: translateY(-10px);
     }
 
     .publisher-introduction p {
@@ -675,7 +616,6 @@
     .publisher-page h2 {
       margin-top: 2.2rem;
       margin-bottom: 0.85rem;
-
       font-size: 1.65rem;
       line-height: 1.2;
     }
@@ -683,35 +623,23 @@
     .publisher-page h3 {
       margin-top: 1.75rem;
       margin-bottom: 0.45rem;
-
       font-size: 1.2rem;
       line-height: 1.25;
     }
 
-
-  /* =======================================================
-     UITGELICHTE UITGAVE
-     ======================================================= */
-
-     .publisher-release {
+    .publisher-release {
       margin-bottom: 0;
     }
 
     .publisher-release-inner {
       grid-template-columns: 1fr;
       gap: 0;
-
       min-height: 0;
-
       padding: 30px 16px 34px;
     }
 
-
-    /* Omslag */
-
     .publisher-release-cover {
       order: 1;
-
       width: 100%;
       margin: 0 0 24px;
     }
@@ -722,71 +650,59 @@
       height: auto;
     }
 
-
-    /* Tekst */
-
     .publisher-release-copy {
       order: 2;
-
       width: 100%;
       max-width: 340px;
-
       margin: 0 auto 30px;
       padding: 0;
-
       transform: none !important;
     }
 
     .publisher-release-title {
       margin: 0 0 0.55rem !important;
-
       font-size: 1.65rem !important;
       line-height: 1.13 !important;
     }
 
     .publisher-release-author {
       margin: 0 0 0.9rem;
-
       font-size: 1.08rem;
       line-height: 1.3;
     }
 
-   /* .publisher-release-description {
+    .publisher-release-description,
+    .publisher-release-meta {
       width: 100%;
       max-width: none;
-      margin: 0 0 1rem;
-
       font-size: 0.98rem;
       line-height: 1.48;
     }
 
-.publisher-release-meta {
-  margin: 1.5rem 0 0;
+    .publisher-release-description {
+      margin: 0;
+    }
 
-  color: #132244;
+    .publisher-release-meta {
+      margin: 1rem 0 0;
+    }
 
-  font-size: 1.15rem;
-  line-height: 1.55;
-}*/
-
-    .publisher-release-button {
-      display: inline-block;
-
+    .publisher-release-actions {
+      flex-wrap: wrap;
+      gap: 10px;
       margin-top: 1rem;
-      padding: 0.4rem 0.85rem;
+    }
 
+    .publisher-release-button,
+    .publisher-release-info-button {
+      padding: 0.4rem 0.75rem;
       font-size: 0.9rem;
     }
 
-
-    /* Binnenbeeld */
-
     .publisher-release-image {
       order: 3;
-
       width: 100%;
       max-width: 320px;
-
       margin: 0 auto;
     }
 
@@ -797,38 +713,30 @@
       max-height: none;
     }
 
-
-    /* Eerste kop na het witte boekblok */
-
     .publisher-release + h2 {
       margin-top: 2rem;
     }
 
-
-  /* =======================================================
-     FOOTER
-     ======================================================= */
-
-     .publisher-footer-link {
+    .publisher-footer-link {
       font-size: 0.8rem;
     }
 
     .publisher-footer-logo {
       height: 1em;
+    }
+
+    .publisher-contact {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0 auto;
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .publisher-icon {
+      transform: translateY(-20px);
     }
   }
-  /* =======================================================
-     FOOTER
-     ======================================================= */
-
-     .publisher-footer-link {
-      font-size: 0.8rem;
-    }
-
-    .publisher-footer-logo {
-      height: 1em;
-    }
-
 
 
 /* =========================================================
@@ -854,17 +762,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-
     color: #ffffff !important;
     font-size: smaller;
     line-height: 1;
     text-decoration: none !important;
-
     cursor: pointer;
     transition: opacity 0.2s ease;
   }
@@ -891,7 +796,6 @@
     width: auto;
     height: 1em;
     margin-left: 0.3em;
-
     object-fit: contain;
     filter: brightness(0) invert(1);
   }

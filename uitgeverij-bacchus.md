@@ -54,12 +54,29 @@ bacchus_logo: /assets/images/uitgeverij-bacchus/woordmerk.png
         Publicatiedatum: 01-08-2026
       </p>
 
-      <a
+     <!--  <a
       class="publisher-release-button"
       href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629"
       aria-label="Bestel Mijnheer Pimpelmans heeft alweer pech">
       Bestel
-    </a>
+    </a> -->
+
+    <div class="publisher-release-actions">
+
+  <a
+    class="publisher-release-info-button"
+    href="{{ '/' | prepend: site.baseurl }}">
+    Meer over het boek
+  </a>
+
+  <a
+    class="publisher-release-button"
+    href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629"
+    aria-label="Bestel Mijnheer Pimpelmans heeft alweer pech">
+    Bestel
+  </a>
+
+</div>
 
   </div>
 
@@ -75,7 +92,22 @@ bacchus_logo: /assets/images/uitgeverij-bacchus/woordmerk.png
 
 </section>
 
-<h2>Zorgvuldig opnieuw uitgegeven</h2>
+<section class="publisher-contact">
+  <p>Heb je vragen of opmerkingen over deze uitgave?</p>
+
+  <a
+  class="publisher-release-info-button"
+  href="mailto:arthurvk@xs4all.nl">
+  Neem contact op
+</a>
+</section>
+<figure class="publisher-icon">
+  <img
+  src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/thyrsus.png"
+  alt="Thyrsus">
+</figure>
+
+<!-- <h2>Zorgvuldig opnieuw uitgegeven</h2>
 
 <p>
   De uitgaven van Bacchus worden zo veel mogelijk opgebouwd uit oorspronkelijk
@@ -111,4 +143,4 @@ bacchus_logo: /assets/images/uitgeverij-bacchus/woordmerk.png
   Vooralsnog bestaat het fonds van Uitgeverij Bacchus uit één titel.
   Nieuwe uitgaven worden alleen overwogen wanneer zich een project aandient
   dat om een vergelijkbare zorgvuldige behandeling vraagt.
-</p>
+</p> -->
