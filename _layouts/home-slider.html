@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'nl' }}">
+
+<head>
+  {% include _head.html %}
+</head>
+
+<body class="home-slider-page">
+
+  {% include sidebar.html %}
+
+  <main class="tuur-home">
+
+    <section
+      class="home-hero"
+      aria-label="Mijnheer Pimpelmans heeft alweer pech">
+
+      <nav
+        class="home-hero__badges"
+        aria-label="Hoofdnavigatie">
+
+        <a
+          class="home-hero__badge home-hero__badge--bacchus"
+          href="{{ '/uitgeverij-bacchus/' | relative_url }}"
+          aria-label="Naar Uitgeverij Bacchus">
+
+          <img
+            src="{{ page.bacchus_badge | relative_url }}"
+            alt="Uitgeverij Bacchus">
+
+        </a>
+
+        <a
+          class="home-hero__badge home-hero__badge--tuur"
+          href="{{ '/artikelen/' | relative_url }}"
+          aria-label="Naar TUUR en de artikelen">
+
+          <img
+            src="{{ page.tuur_badge | relative_url }}"
+            alt="TUUR">
+
+        </a>
+
+      </nav>
+
+      <div
+        class="home-slider"
+        data-home-slider>
+
+        <div
+          class="home-slider__viewport"
+          data-slider-viewport>
+
+          <div class="home-slider__slides">
+
+            <div
+              class="home-slider__slide home-slider__slide--book is-active"
+              data-slide
+              aria-hidden="false">
+
+              <img
+                src="{{ '/assets/images/home/pimpelmans-book-mockup.png' | relative_url }}"
+                alt="Mijnheer Pimpelmans heeft alweer pech als oblong hardcoverboek">
+
+            </div>
+
+            <div
+              class="home-slider__slide home-slider__slide--spread"
+              data-slide
+              aria-hidden="true">
+
+              <img
+                src="{{ '/assets/images/home/pimpelmans-opening-spread.png' | relative_url }}"
+                alt="De eerste twee afleveringen van Mijnheer Pimpelmans heeft alweer pech">
+
+            </div>
+
+            <div
+              class="home-slider__slide home-slider__slide--title"
+              data-slide
+              aria-hidden="true">
+
+              <img
+                src="{{ '/assets/images/home/pimpelmans-title-page.png' | relative_url }}"
+                alt="Titelpagina van Mijnheer Pimpelmans heeft alweer pech">
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="home-intro">
+
+      <div class="home-intro__inner">
+        {{ content }}
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="{{ site.url }}{{ site.baseurl }}/assets/js/sidebar.js"></script>
+  <script src="{{ '/assets/js/home-slider.js' | relative_url }}"></script>
+
+</body>
+</html>

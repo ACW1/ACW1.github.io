@@ -1,39 +1,60 @@
-{% assign pagfloat = site.paginate | times:1.0 %}
-{% assign numofpag = site.posts.size | divided_by:pagfloat | ceil %}
-{% assign pagplus = site.paginate | plus:1 %}
-{% assign pagmin = site.paginate | minus:1 %}
-{% for page in (1..numofpag) %}
-  {% if page == paginator.page %}
-    {% assign toppost = page | minus:1 | times:pagmin | plus:page | minus:1 %}
-    <!-- <p id="band"> {{ page | minus:1 | times:pagmin | plus:page }} {{ site.posts[toppost].title }}</p> -->
-    {% if site.posts[toppost].backgrim and site.posts[toppost].caption %}
-      <body style="background-image: 
-        {% if site.posts[toppost].backgrim contains 'http' %}
-        url('{{ site.posts[toppost].backgrim }}');
-        {% else %}
-        url('{{ site.url }}{{ site.baseurl }}/assets/images/{{ site.posts[toppost].backgrim }}');
-        {% endif %}
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;">
-      <p id="backimg-cap">{{ site.posts[toppost].caption}}</p>
-      {% if site.posts[toppost].bandkleur %}
-        <main id="band" class="home" style="background-color: {{ site.posts[toppost].bandkleur }};" id="main" role="main" aria-label="Content">
-          <div class="wrapper"> 
-      {% else %}
-        <main id="band" class="home" id="main" role="main" aria-label="Content">
-          <div class="wrapper"> 
-      {% endif %}  
-    {% else %}
-      <body style="background-image: 
-        url('{{ site.url }}{{ site.baseurl }}{{ site.backimg }}'); 
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;">
-      <p id="backimg-cap">Dit is de duiker</p> 
-    {% endif %}
-  {% endif %}
-{% endfor %}
+{% if page.layout == "artikelen" %}
 
+  {% assign current_page_number = paginator.page | default: 1 %}
+  {% assign posts_per_page = site.paginate | default: site.posts.size %}
+  {% assign top_post_index = current_page_number | minus: 1 | times: posts_per_page %}
+  {% assign top_post = site.posts[top_post_index] %}
+
+  {% if top_post.backgrim and top_post.caption %}
+
+    <body style="
+      background-image:
+        {% if top_post.backgrim contains 'http' %}
+          url('{{ top_post.backgrim }}');
+        {% else %}
+          url('{{ site.url }}{{ site.baseurl }}/assets/images/{{ top_post.backgrim }}');
+        {% endif %}
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    ">
+
+    <p id="backimg-cap">{{ top_post.caption }}</p>
+
+  {% else %}
+
+    <body style="
+      background-image: url('{{ site.url }}{{ site.baseurl }}{{ site.backimg }}');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+    ">
+
+    <p id="backimg-cap">Dit is de duiker</p>
+
+  {% endif %}
+
+  {% if top_post.bandkleur %}
+
+    <main
+      id="band"
+      class="home"
+      style="background-color: {{ top_post.bandkleur }};"
+      role="main"
+      aria-label="Content">
+
+  {% else %}
+
+    <main
+      id="band"
+      class="home"
+      role="main"
+      aria-label="Content">
+
+  {% endif %}
+
+  <div class="wrapper">
+
+{% endif %}

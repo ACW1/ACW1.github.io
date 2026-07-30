@@ -1,0 +1,106 @@
+---
+layout: default
+---
+
+<!-- <main id="band" class="home" role="main" aria-label="Content"> -->
+    <header class="site-masthead">
+      <!-- {% include menu.html %} -->
+      <div data-sticky-container>
+        <div class="plak" data-sticky data-margin-top='0' data-sticky-on="small">
+          <div class="relative">
+            <a id="areah" href='' onclick="toggleNav()" title="Menu" alt="alttext">
+              <p id="asterisk">*</p>
+            </a>
+            {% if site.paginate and site.paginate_path and paginator.page == 1 %}
+              <img id="logo" src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }} – {{ site.slogan }}" usemap="#workmap">
+            {% else %}
+              <a href="{{ '/' | prepend: site.baseurl }}">
+                <img id="logo" src="{{ site.url }}{{ site.baseurl }}{{ site.logo }}" title="Home" alt="{{ site.title }} – {{ site.slogan }}">
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <!-- image map kan op termijn weg -->
+      <map name="workmap">
+        <!-- <area id="areah" shape="circle" coords="340, 10, 20" href="" onclick="toggleNav()" title="Menu" alt="alttext"> -->
+        <area id="areah" shape="circle" coords="301, 8, 16" href="" onclick="toggleNav()" title="Menu" alt="alttext">
+      </map>
+      {% if site.title %}
+        <h2>
+          {{ site.description }}
+        </h2>
+      {% endif %}
+    </header>
+
+  <div class="red-pag">
+    {% if site.paginate and site.paginate_path and paginator.page > 1 %}
+    <h2 class="content-title divided">
+      <!-- Page {{ paginator.page }} -->
+    </h2>
+    {% else %}
+      <h2 class="content-title divided"></h2>
+      <div id="redact">
+        <h2 class="content-title">
+          REDACTIE
+        </h2>
+        <a href="{{ site.url }}{{ '/about' | prepend: site.baseurl }}">
+          <div class="undertext">
+            <p>Arthur van Kruining</p>
+          </div>
+        </a>
+      </div>
+    {% endif %}
+  </div> 
+
+  {% if site.paginate and site.paginate_path %}
+    
+    <ul class="post-list">
+      <!-- {% for post in paginator.posts %}
+        {% include post-list-item.html %}
+      {% endfor %} -->
+      {% for post in site.posts %}
+  {% include post-list-item.html %}
+{% endfor %}
+    </ul>
+
+    {% if paginator.total_pages > 1 %}
+      <!--   <div class="push"></div>
+      </div>
+      <footer class="footer"> -->
+       <div class="push"></div>
+      </div>
+      <footer class="footer footer-pag">  
+      <div class="post-pagination">
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl  }}" class="pagination-next btn"><i class="fa-solid fa-chevron-right"></i></a>
+        {% else %}
+          <span>&nbsp;</span>
+        {% endif %}
+        <span class="pagination-number">{{ paginator.page }} van {{ paginator.total_pages }}</span>
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="pagination-previous btn"><i class="fa-solid fa-chevron-left"></i></a>
+        {% else %}
+          <span>&nbsp;</span>
+        {% endif %}
+      </div>
+        <aside class="site-credits">
+          
+           <!--  <small><a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a> powered by <a href="https://jekyllrb.com">Jekyll</a></small> -->
+          <small><p style="font-size: 12px;">Site inspired by the <a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a></p>
+
+          <p>© 2022 Arthur van Kruining</p></small>            
+        </aside>
+      </footer>
+
+    {% endif %}
+
+  {% else %}
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% include post-list-item.html %}
+      {% endfor %}
+    </ul>
+  
+  {% endif %}
