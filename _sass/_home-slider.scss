@@ -39,6 +39,24 @@ body.home-slider-page {
   min-height: 600px;
   overflow: hidden;
   background: #fff;
+
+  /*
+   * Veilige ruimte tussen de badges.
+   *
+   * 4vw   = afstand van badge tot schermrand
+   * 118px = breedte van de badge
+   * 32px  = extra ruimte tussen badge en inhoud
+   */
+
+  --carousel-badge-offset: 4vw;
+  --carousel-badge-size: 118px;
+  --carousel-badge-gap: 32px;
+
+  --carousel-safe-padding: calc(
+    var(--carousel-badge-offset) +
+    var(--carousel-badge-size) +
+    var(--carousel-badge-gap)
+  );
 }
 
 /*
@@ -134,17 +152,23 @@ body.home-slider-page {
   right: 0;
   bottom: 0;
   left: 0;
-  color: #fffbf1;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding: 38px 10vw;
+  /*
+   * Alle inhoud blijft op desktop tussen de twee badges.
+   */
 
+  padding:
+    38px
+    var(--carousel-safe-padding);
+
+  color: #fffbf1;
   opacity: 0;
   visibility: hidden;
-  background: #EB6850;
+  background: #eb6850;
 
   transition:
     opacity 650ms ease,
@@ -169,33 +193,103 @@ body.home-slider-page {
 }
 
 /*
- * Het boek mag iets kleiner staan dan de vlakke pagina's.
+ * SLIDES MET TEKST EN AFBEELDING
+ *
+ * Op desktop twee even brede kolommen.
+ */
+
+.home-slider__slide--bridge,
+.home-slider__slide--spread,
+.home-slider__slide--title {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  column-gap: 4vw;
+
+  padding:
+    80px
+    var(--carousel-safe-padding)
+    40px;
+}
+
+.home-slider__slide--bridge h1,
+.home-slider__slide--spread h1,
+.home-slider__slide--title h1 {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: center;
+
+  width: 100%;
+  max-width: 520px;
+  margin: 0;
+
+  color: #fffbf1;
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1.05;
+  text-align: center;
+}
+
+/*
+ * Gewone slides:
+ * tekst links, afbeelding rechts.
+ *
+ * De afbeelding staat links in de rechterkolom.
+ */
+
+.home-slider__slide--bridge img,
+.home-slider__slide--title img {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  justify-self: start;
+
+  width: 100%;
+  height: 72vh;
+  max-width: 620px;
+
+  object-position: left center;
+}
+
+/*
+ * Slide 3:
+ * afbeelding links, tekst rechts.
+ *
+ * De afbeelding staat rechts in de linkerkolom.
+ */
+
+.home-slider__slide--spread img {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  justify-self: end;
+
+  width: 100%;
+  height: 72vh;
+  max-width: 620px;
+
+  object-position: right center;
+}
+
+.home-slider__slide--spread h1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/*
+ * LAATSTE SLIDE: BOEKMOCK-UP
  */
 
 .home-slider__slide--book {
-/*  background: #ea505a;*/
+  /* background: #ea505a; */
 }
 
 .home-slider__slide--book img {
   width: 100%;
   height: 100%;
+
   /* filter: drop-shadow(0 24px 20px rgba(0, 0, 0, 0.28)); */
-}
-
-.home-slider__slide--bridge img {
-  width: 80%;
-  height: 80%;
-  /* filter: drop-shadow(0 24px 20px rgba(0, 0, 0, 0.28)); */
-}
-
-.home-slider__slide--spread img {
-  width: 78%;
-  height: 78%;
-}
-
-.home-slider__slide--title img {
-  width: 78%;
-  height: 78%;
 }
 
 /*
@@ -244,25 +338,34 @@ body.home-slider-page {
  */
 
 @media (max-width: 980px) {
+  .home-hero {
+    /*
+     * Op tablet zijn de badges 98px breed.
+     */
+
+    --carousel-badge-size: 98px;
+  }
+
   .home-hero__badge {
     width: 98px;
     height: 98px;
   }
 
-  .home-slider__slide {
-    padding-right: 5vw;
-    padding-left: 5vw;
+  .home-slider__slide--bridge h1,
+  .home-slider__slide--spread h1,
+  .home-slider__slide--title h1 {
+    font-size: 48px;
+  }
+
+  .home-slider__slide--bridge img,
+  .home-slider__slide--spread img,
+  .home-slider__slide--title img {
+    height: 64vh;
   }
 
   .home-slider__slide--book img {
     width: 90%;
     height: 90%;
-  }
-
-  .home-slider__slide--spread img,
-  .home-slider__slide--title img {
-    width: 88%;
-    height: 88%;
   }
 
   .home-intro h1 {
@@ -273,8 +376,8 @@ body.home-slider-page {
 /*
  * MOBIEL
  *
- * Hier is de slider bewust lager dan het scherm, zodat de kop
- * van de volgende sectie al zichtbaar wordt.
+ * De tekst staat boven de afbeelding.
+ * De bovenruimte houdt de tekst duidelijk vrij van de badges.
  */
 
 @media (max-width: 760px) {
@@ -305,13 +408,63 @@ body.home-slider-page {
     padding: 15px 9px;
   }
 
+  /*
+   * Vanaf mobiel vervangt deze padding de desktopruimte
+   * tussen de badges.
+   */
+
   .home-slider__slide {
     padding: 80px 12px 22px;
   }
 
-  .home-slider__slide--book img,
+  .home-slider__slide--bridge,
+  .home-slider__slide--spread,
+  .home-slider__slide--title {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+
+    align-content: start;
+    align-items: center;
+    justify-items: center;
+
+    row-gap: 18px;
+    padding: 190px 18px 22px;
+  }
+
+  .home-slider__slide--bridge h1,
+  .home-slider__slide--spread h1,
+  .home-slider__slide--title h1 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+
+    width: 100%;
+    max-width: 520px;
+    margin: 0;
+
+    font-size: 36px;
+    line-height: 1.05;
+    text-align: center;
+  }
+
+  .home-slider__slide--bridge img,
   .home-slider__slide--spread img,
   .home-slider__slide--title img {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+
+    width: 92%;
+    height: 100%;
+    max-height: 330px;
+
+    object-position: center;
+  }
+
+  .home-slider__slide--book img {
     width: 90%;
     height: 90%;
   }
@@ -342,6 +495,24 @@ body.home-slider-page {
   .home-hero__badge {
     width: 90px;
     height: 90px;
+  }
+
+  .home-slider__slide--bridge,
+  .home-slider__slide--spread,
+  .home-slider__slide--title {
+    padding-top: 190px;
+  }
+
+  .home-slider__slide--bridge h1,
+  .home-slider__slide--spread h1,
+  .home-slider__slide--title h1 {
+    font-size: 32px;
+  }
+
+  .home-slider__slide--bridge img,
+  .home-slider__slide--spread img,
+  .home-slider__slide--title img {
+    max-height: 300px;
   }
 
   .home-intro h1 {
