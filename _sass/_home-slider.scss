@@ -1,8 +1,11 @@
 /*
  * Homepage-slider
- * Desktop: volledig eerste scherm.
- * Mobiel: lager, zodat de volgende kop zichtbaar wordt.
+ * Desktop en mobiel: volledig eerste scherm.
  */
+
+html {
+  scroll-behavior: smooth;
+}
 
 body.home-slider-page {
   margin: 0;
@@ -29,6 +32,32 @@ body.home-slider-page {
 }
 
 /*
+ * Alleen op mobiel zichtbare regeleinden.
+ */
+
+.mobile-carousel-break {
+  display: none;
+}
+
+/*
+ * Op desktop hebben de mobiele frames zelf geen vorm.
+ */
+
+.mobile-carousel-image-frame,
+.home-slider__book-frame {
+  display: contents;
+}
+
+/*
+ * De titel boven de boekmock-up is alleen
+ * in staande mobiele weergave zichtbaar.
+ */
+
+.home-slider__book-heading {
+  display: none;
+}
+
+/*
  * SLIDERSECTIE
  */
 
@@ -42,10 +71,6 @@ body.home-slider-page {
 
   /*
    * Veilige ruimte tussen de badges.
-   *
-   * 4vw   = afstand van badge tot schermrand
-   * 118px = breedte van de badge
-   * 32px  = extra ruimte tussen badge en inhoud
    */
 
   --carousel-badge-offset: 4vw;
@@ -69,9 +94,11 @@ body.home-slider-page {
   top: 2.5vw;
   right: 4vw;
   left: 4vw;
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
   pointer-events: none;
 }
 
@@ -79,13 +106,17 @@ body.home-slider-page {
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 118px;
   height: 118px;
   padding: 10px;
+
   border: 2px solid #132244;
   border-radius: 50%;
   background: #fffbf1;
+
   pointer-events: auto;
+
   transition:
     opacity 180ms ease,
     transform 180ms ease;
@@ -148,18 +179,11 @@ body.home-slider-page {
 .home-slider__slide {
   position: absolute;
   z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /*
-   * Alle inhoud blijft op desktop tussen de twee badges.
-   */
 
   padding:
     38px
@@ -217,6 +241,7 @@ body.home-slider-page {
 .home-slider__slide--title h1 {
   grid-column: 1;
   grid-row: 1;
+
   align-self: center;
   justify-self: center;
 
@@ -234,14 +259,13 @@ body.home-slider-page {
 /*
  * Gewone slides:
  * tekst links, afbeelding rechts.
- *
- * De afbeelding staat links in de rechterkolom.
  */
 
 .home-slider__slide--bridge img,
 .home-slider__slide--title img {
   grid-column: 2;
   grid-row: 1;
+
   align-self: center;
   justify-self: start;
 
@@ -255,13 +279,12 @@ body.home-slider-page {
 /*
  * Slide 3:
  * afbeelding links, tekst rechts.
- *
- * De afbeelding staat rechts in de linkerkolom.
  */
 
 .home-slider__slide--spread img {
   grid-column: 1;
   grid-row: 1;
+
   align-self: center;
   justify-self: end;
 
@@ -281,15 +304,63 @@ body.home-slider-page {
  * LAATSTE SLIDE: BOEKMOCK-UP
  */
 
-.home-slider__slide--book {
-  /* background: #ea505a; */
-}
-
 .home-slider__slide--book img {
   width: 100%;
   height: 100%;
+}
 
-  /* filter: drop-shadow(0 24px 20px rgba(0, 0, 0, 0.28)); */
+/*
+ * KNOP OP DE LAATSTE SLIDE
+ */
+
+.home-slider__info-button {
+  position: absolute;
+  z-index: 5;
+  right: 4vw;
+  bottom: 2.5vw;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 48px;
+  padding: 11px 24px;
+
+  border: 2px solid #fffbf1;
+  border-radius: 0.5rem;
+  background: #ea505a;
+  color: #fffbf1;
+
+  font-family: "nobel", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+
+  cursor: pointer;
+
+  transition:
+    background-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.home-slider__info-button:hover {
+  background: #fffbf1;
+  color: #132244;
+  transform: translateY(-2px);
+}
+
+.home-slider__info-button:active {
+  background: #fffbf1;
+  color: #132244;
+  transform: translateY(1px);
+}
+
+.home-slider__info-button:focus-visible {
+  outline: 3px solid #132244;
+  outline-offset: 4px;
 }
 
 /*
@@ -301,6 +372,7 @@ body.home-slider-page {
   min-height: 100vh;
   padding: 78px 32px 110px;
   background: #fff;
+  scroll-margin-top: 0;
 }
 
 .home-intro__inner {
@@ -313,6 +385,7 @@ body.home-slider-page {
 .home-intro h1 {
   max-width: 900px;
   margin: 0 auto 30px;
+
   color: #132244;
   font-size: 58px;
   font-weight: 400;
@@ -322,6 +395,7 @@ body.home-slider-page {
 .home-intro p {
   max-width: 740px;
   margin: 0 auto 28px;
+
   color: #30271f;
   font-size: 23px;
   line-height: 1.55;
@@ -339,10 +413,6 @@ body.home-slider-page {
 
 @media (max-width: 980px) {
   .home-hero {
-    /*
-     * Op tablet zijn de badges 98px breed.
-     */
-
     --carousel-badge-size: 98px;
   }
 
@@ -374,28 +444,62 @@ body.home-slider-page {
 }
 
 /*
- * MOBIEL
+ * STAAND MOBIEL
  *
- * De tekst staat boven de afbeelding.
- * De bovenruimte houdt de tekst duidelijk vrij van de badges.
+ * De carrousel is schermhoog.
+ * Tekst en beeld worden samen verticaal gecentreerd
+ * tussen de onderkant van de badges en de schermvouw.
  */
 
 @media (max-width: 760px) {
   .home-hero {
-    height: 72vh;
-    min-height: 480px;
-    max-height: 680px;
+    --mobile-viewport-height: 100vh;
+    --mobile-viewport-height: 100dvh;
+
+    --mobile-badge-top: 34px;
+    --mobile-badge-size: 76px;
+    --mobile-content-gap: 28px;
+    --mobile-bottom-space: 22px;
+
+    --mobile-heading-height: 86px;
+    --mobile-row-gap: 20px;
+
+    --mobile-safe-top: calc(
+      var(--mobile-badge-top) +
+      var(--mobile-badge-size) +
+      var(--mobile-content-gap)
+    );
+
+    --mobile-available-height: calc(
+      var(--mobile-viewport-height) -
+      var(--mobile-safe-top) -
+      var(--mobile-bottom-space)
+    );
+
+    --mobile-frame-height: min(
+      50dvh,
+      calc(
+        var(--mobile-available-height) -
+        var(--mobile-heading-height) -
+        var(--mobile-row-gap) -
+        28px
+      )
+    );
+
+    height: var(--mobile-viewport-height);
+    min-height: 0;
+    max-height: none;
   }
 
   .home-hero__badges {
-    top: 34px;
+    top: var(--mobile-badge-top);
     right: 32px;
     left: 32px;
   }
 
   .home-hero__badge {
-    width: 76px;
-    height: 76px;
+    width: var(--mobile-badge-size);
+    height: var(--mobile-badge-size);
     padding: 8px;
     border-width: 1px;
   }
@@ -408,28 +512,34 @@ body.home-slider-page {
     padding: 15px 9px;
   }
 
-  /*
-   * Vanaf mobiel vervangt deze padding de desktopruimte
-   * tussen de badges.
-   */
-
-  .home-slider__slide {
-    padding: 80px 12px 22px;
+  .mobile-carousel-break {
+    display: block;
   }
+
+  /*
+   * Tekstslides.
+   */
 
   .home-slider__slide--bridge,
   .home-slider__slide--spread,
   .home-slider__slide--title {
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto minmax(0, 1fr);
 
-    align-content: start;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows:
+      var(--mobile-heading-height)
+      var(--mobile-frame-height);
+
+    align-content: center;
     align-items: center;
     justify-items: center;
 
-    row-gap: 18px;
-    padding: 190px 18px 22px;
+    row-gap: var(--mobile-row-gap);
+
+    padding:
+      var(--mobile-safe-top)
+      18px
+      var(--mobile-bottom-space);
   }
 
   .home-slider__slide--bridge h1,
@@ -437,36 +547,169 @@ body.home-slider-page {
   .home-slider__slide--title h1 {
     grid-column: 1;
     grid-row: 1;
-    align-self: center;
-    justify-self: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     width: 100%;
-    max-width: 520px;
+    height: var(--mobile-heading-height);
+    max-width: 410px;
     margin: 0;
 
-    font-size: 36px;
+    font-size: clamp(29px, 8.2vw, 36px);
     line-height: 1.05;
     text-align: center;
   }
 
-  .home-slider__slide--bridge img,
-  .home-slider__slide--spread img,
-  .home-slider__slide--title img {
+  .mobile-carousel-image-frame {
     grid-column: 1;
     grid-row: 2;
-    align-self: center;
-    justify-self: center;
 
-    width: 92%;
-    height: 100%;
-    max-height: 330px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
-    object-position: center;
+    width: 100%;
+    height: var(--mobile-frame-height);
+    min-height: 0;
   }
 
-  .home-slider__slide--book img {
-    width: 90%;
-    height: 90%;
+  .mobile-carousel-image-frame img {
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 94%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: top center;
+  }
+
+  /*
+   * Het staande Rotmanportret iets minder dominant.
+   */
+
+  .home-slider__slide--spread
+  .mobile-carousel-image-frame img {
+    max-height: 94%;
+  }
+
+  /*
+   * LAATSTE SLIDE
+   *
+   * De hoofdindeling is gelijk aan slides 1 t/m 4:
+   * één vaste koprij en één vast beeldvak.
+   */
+
+  .home-slider__slide--book {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows:
+      var(--mobile-heading-height)
+      var(--mobile-frame-height);
+
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+
+    row-gap: var(--mobile-row-gap);
+
+    padding:
+      var(--mobile-safe-top)
+      18px
+      var(--mobile-bottom-space);
+  }
+
+  .home-slider__book-heading {
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: var(--mobile-heading-height);
+    max-width: 410px;
+    margin: 0;
+
+    color: #fffbf1;
+    font-size: clamp(31px, 8.7vw, 38px);
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.05;
+    text-align: center;
+  }
+
+  /*
+   * Het beeldvak bestaat uit een flexibele rij
+   * voor de mock-up en een vaste rij voor de knop.
+   */
+
+  .home-slider__book-frame {
+    grid-column: 1;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr) auto;
+
+    align-items: center;
+    justify-items: center;
+
+    width: 100%;
+    height: var(--mobile-frame-height);
+    min-height: 0;
+    padding: 0;
+
+    row-gap: 24px;
+  }
+
+  /*
+   * De mock-up staat 24px lager.
+   */
+
+  .home-slider__book-frame img {
+    grid-column: 1;
+    grid-row: 1;
+
+    align-self: start;
+    justify-self: center;
+
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 94%;
+    max-height: calc(100% - 24px);
+    margin: 24px 0 0;
+
+    object-fit: contain;
+    object-position: top center;
+
+    transform: none;
+  }
+
+  .home-slider__book-frame
+  .home-slider__info-button {
+    grid-column: 1;
+    grid-row: 2;
+
+    position: static;
+
+    align-self: end;
+    justify-self: center;
+
+    min-height: 44px;
+    margin: 0;
+    padding: 10px 22px;
+
+    font-size: 17px;
   }
 
   .home-intro {
@@ -486,21 +729,14 @@ body.home-slider-page {
   }
 }
 
+/*
+ * KLEINE MOBIELE SCHERMEN
+ */
+
 @media (max-width: 430px) {
   .home-hero {
-    height: 69vh;
-    min-height: 450px;
-  }
-
-  .home-hero__badge {
-    width: 90px;
-    height: 90px;
-  }
-
-  .home-slider__slide--bridge,
-  .home-slider__slide--spread,
-  .home-slider__slide--title {
-    padding-top: 190px;
+    --mobile-badge-size: 90px;
+    --mobile-heading-height: 78px;
   }
 
   .home-slider__slide--bridge h1,
@@ -509,10 +745,8 @@ body.home-slider-page {
     font-size: 32px;
   }
 
-  .home-slider__slide--bridge img,
-  .home-slider__slide--spread img,
-  .home-slider__slide--title img {
-    max-height: 300px;
+  .home-slider__book-heading {
+    font-size: 34px;
   }
 
   .home-intro h1 {
@@ -520,9 +754,243 @@ body.home-slider-page {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .home-slider__slide,
+/*
+ * HORIZONTAAL GEKANTELDE MOBIELE SCHERMEN
+ */
+
+@media
+  (max-width: 1024px)
+  and (orientation: landscape)
+  and (max-height: 500px) {
+
+  .home-hero {
+    --landscape-badge-size: 84px;
+    --landscape-badge-edge: 22px;
+    --landscape-badge-gap: 24px;
+
+    --landscape-safe-padding: calc(
+      var(--landscape-badge-edge) +
+      var(--landscape-badge-size) +
+      var(--landscape-badge-gap)
+    );
+
+    height: 100vh;
+    height: 100dvh;
+    min-height: 0;
+    max-height: none;
+  }
+
+  /*
+   * Badges.
+   */
+
+  .home-hero__badges {
+    top: 14px;
+    right: var(--landscape-badge-edge);
+    left: var(--landscape-badge-edge);
+  }
+
   .home-hero__badge {
+    width: var(--landscape-badge-size);
+    height: var(--landscape-badge-size);
+    padding: 8px;
+    border-width: 1px;
+  }
+
+  .home-hero__badge--bacchus {
+    padding: 3px;
+  }
+
+  .home-hero__badge--tuur {
+    padding: 16px 10px;
+  }
+
+  /*
+   * Geen geforceerde mobiele regeleinden in landscape.
+   */
+
+  .mobile-carousel-break {
+    display: none;
+  }
+
+  /*
+   * Slides 1 t/m 4:
+   * tekst en afbeelding naast elkaar.
+   */
+
+  .home-slider__slide--bridge,
+  .home-slider__slide--spread,
+  .home-slider__slide--title {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: minmax(0, 1fr);
+
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+
+    column-gap: 28px;
+    row-gap: 0;
+
+    padding:
+      16px
+      var(--landscape-safe-padding);
+  }
+
+  /*
+   * De mobiele wrappers beïnvloeden de landscape-grid niet.
+   */
+
+  .mobile-carousel-image-frame {
+    display: contents;
+  }
+
+  /*
+   * Gewone slides:
+   * tekst links, afbeelding rechts.
+   */
+
+  .home-slider__slide--bridge h1,
+  .home-slider__slide--title h1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .home-slider__slide--bridge img,
+  .home-slider__slide--title img {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /*
+   * Slide 3:
+   * afbeelding links, tekst rechts.
+   */
+
+  .home-slider__slide--spread img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .home-slider__slide--spread h1 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  /*
+   * Teksten.
+   */
+
+  .home-slider__slide--bridge h1,
+  .home-slider__slide--spread h1,
+  .home-slider__slide--title h1 {
+    align-self: center;
+    justify-self: center;
+
+    display: block;
+
+    width: 100%;
+    height: auto;
+    max-width: 330px;
+    margin: 0;
+
+    font-size: clamp(25px, 4vw, 34px);
+    line-height: 1.05;
+    text-align: center;
+  }
+
+  /*
+   * Afbeeldingen.
+   */
+
+  .home-slider__slide--bridge img,
+  .home-slider__slide--spread img,
+  .home-slider__slide--title img {
+    align-self: center;
+    justify-self: center;
+
+    display: block;
+
+    width: auto;
+    height: auto;
+
+    max-width: 100%;
+    max-height: 82dvh;
+
+    margin: 0;
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /*
+   * Slide 5:
+   * analoog aan desktop.
+   * Geen titel; mock-up gecentreerd en knop rechtsonder.
+   */
+
+  .home-slider__slide--book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding:
+      16px
+      var(--landscape-safe-padding);
+  }
+
+  .home-slider__book-heading {
+    display: none;
+  }
+
+  .home-slider__book-frame {
+    display: contents;
+  }
+
+  .home-slider__book-frame img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 88dvh;
+
+    margin: 0;
+    transform: none;
+
+    object-fit: contain;
+    object-position: center;
+  }
+
+  .home-slider__book-frame
+  .home-slider__info-button {
+    position: absolute;
+    z-index: 5;
+
+    right: var(--landscape-badge-edge);
+    bottom: 14px;
+
+    min-height: 42px;
+    margin: 0;
+    padding: 9px 20px;
+
+    font-size: 16px;
+  }
+}
+
+/*
+ * MINDER BEWEGING
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .home-slider__slide,
+  .home-hero__badge,
+  .home-slider__info-button {
     transition: none;
   }
 }
