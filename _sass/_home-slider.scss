@@ -328,7 +328,7 @@ body.home-slider-page {
 
   border: 2px solid #fffbf1;
   border-radius: 0.5rem;
-  background: #ea505a;
+  background: #eb6850;
   color: #fffbf1;
 
   font-family: "nobel", sans-serif;
@@ -379,7 +379,7 @@ body.home-slider-page {
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
-  text-align: center;
+  text-align: justify;
 }
 
 .home-intro h1 {
@@ -390,13 +390,14 @@ body.home-slider-page {
   font-size: 58px;
   font-weight: 400;
   line-height: 1.08;
+  text-align: center;
 }
 
 .home-intro p {
   max-width: 740px;
   margin: 0 auto 28px;
 
-  color: #30271f;
+  color: #132244;
   font-size: 23px;
   line-height: 1.55;
 }
