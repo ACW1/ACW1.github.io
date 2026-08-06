@@ -598,67 +598,77 @@ body.home-slider-page {
 
 @media (max-width: 760px) {
   @media (max-width: 760px) {
+    .home-hero {
+      --mobile-viewport-height: 100vh;
+      --mobile-viewport-height: 100dvh;
+
+      --mobile-badge-top: 34px;
+      --mobile-badge-size: 76px;
+      --mobile-content-gap: 28px;
+      --mobile-bottom-space: 22px;
+
+      --mobile-heading-height: 86px;
+      --mobile-row-gap: 20px;
+
+      --mobile-safe-top: calc(
+        var(--mobile-badge-top) +
+        var(--mobile-badge-size) +
+        var(--mobile-content-gap)
+      );
+
+      --mobile-available-height: calc(
+        var(--mobile-viewport-height) -
+        var(--mobile-safe-top) -
+        var(--mobile-bottom-space)
+      );
+
+      --mobile-frame-height: min(
+        50dvh,
+        calc(
+          var(--mobile-available-height) -
+          var(--mobile-heading-height) -
+          var(--mobile-row-gap) -
+          28px
+        )
+      );
+
+      --mobile-book-height: min(
+        54dvh,
+        calc(
+          var(--mobile-available-height) -
+          46px -
+          18px -
+          28px
+        )
+      );
+
+      height: var(--mobile-viewport-height);
+
+      min-height: 0;
+      max-height: none;
+
+      background: #eb6850;
+    }
+
+    /*
+ * Safari op iPhone laat de transparante browserbalk
+ * deels buiten 100lvh vallen. Alleen de oranje buitenkant
+ * wordt daarom iets verlengd; de carrouselinhoud niet.
+ */
+@supports (-webkit-touch-callout: none) {
   .home-hero {
-    --mobile-viewport-height: 100vh;
-    --mobile-viewport-height: 100dvh;
-
-    --mobile-badge-top: 34px;
-    --mobile-badge-size: 76px;
-    --mobile-content-gap: 28px;
-    --mobile-bottom-space: 22px;
-
-    --mobile-heading-height: 86px;
-    --mobile-row-gap: 20px;
-
-    --mobile-safe-top: calc(
-      var(--mobile-badge-top) +
-      var(--mobile-badge-size) +
-      var(--mobile-content-gap)
-    );
-
-    --mobile-available-height: calc(
-      var(--mobile-viewport-height) -
-      var(--mobile-safe-top) -
-      var(--mobile-bottom-space)
-    );
-
-    --mobile-frame-height: min(
-      50dvh,
-      calc(
-        var(--mobile-available-height) -
-        var(--mobile-heading-height) -
-        var(--mobile-row-gap) -
-        28px
-      )
-    );
-
-    --mobile-book-height: min(
-      54dvh,
-      calc(
-        var(--mobile-available-height) -
-        46px -
-        18px -
-        28px
-      )
-    );
-
-    height: 100vh;
-    height: 100lvh;
-
-    min-height: 0;
-    max-height: none;
-
-    background: #eb6850;
+    height: calc(100lvh + 56px);
   }
-
-  .home-slider,
-  .home-slider__viewport,
-  .home-slider__slides {
-    height: var(--mobile-viewport-height);
-  }
-
-  /* de rest van je mobiele CSS blijft staan */
 }
+
+    .home-slider,
+    .home-slider__viewport,
+    .home-slider__slides {
+      height: var(--mobile-viewport-height);
+    }
+
+    /* de rest van je mobiele CSS blijft staan */
+  }
 
   .home-hero__badges {
     top: var(--mobile-badge-top);
