@@ -650,15 +650,8 @@ body.home-slider-page {
       background: #eb6850;
     }
 
-    /*
- * Safari op iPhone laat de transparante browserbalk
- * deels buiten 100lvh vallen. Alleen de oranje buitenkant
- * wordt daarom iets verlengd; de carrouselinhoud niet.
- */
-@supports (-webkit-touch-callout: none) {
-  .home-hero {
-    height: calc(100lvh + 56px);
-  }
+    .home-intro {
+  border-top: 64px solid #fff;
 }
 
     .home-slider,
