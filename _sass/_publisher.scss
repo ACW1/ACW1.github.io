@@ -7,419 +7,402 @@
    PAGINA
    ========================================================= */
 
-   html {
-    margin: 0;
-    padding: 0;
-    background: #ea505a;
-  }
+html {
+  margin: 0;
+  padding: 0;
+  background: #ea505a;
+}
 
-  body.publisher-body {
-    margin: 0;
-    padding: 0;
-    background: #ea505a;
-  }
+body.publisher-body {
+  margin: 0;
+  padding: 0;
+  background: #ea505a;
+}
 
-  .publisher-main {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    background: #fef0d2;
-  }
+.publisher-main {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: #fef0d2;
+}
 
 
 /* =========================================================
    RODE BANNER MET LINK NAAR TUUR
    ========================================================= */
 
-   .publisher-banner {
-    box-sizing: border-box;
-    width: 100%;
-    height: 44px;
-    margin: 0;
-    padding: 0;
-    background: #ea505a;
-  }
+.publisher-banner {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  background: #ea505a;
+}
 
-  .publisher-banner-inner {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 44px;
-    margin: 0;
-    padding: 0;
-  }
+.publisher-banner-inner {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+}
 
-  .publisher-home-link {
-    all: unset;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-    cursor: pointer;
-  }
+.publisher-home-link {
+  all: unset;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
 
-  .publisher-home-link:hover,
-  .publisher-home-link:focus {
-    color: #ffffff;
-    text-decoration: none;
-    opacity: 0.8;
-  }
+.publisher-home-link:hover,
+.publisher-home-link:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.8;
+}
 
-  .publisher-home-link:focus-visible {
-    outline: 2px solid #ffffff;
-    outline-offset: -4px;
-  }
+.publisher-home-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: -4px;
+}
 
-  .publisher-asterisk-glyph {
-    display: block;
-    box-sizing: content-box;
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 13.06px 0 0;
-    color: #fef0d2;
-    font-family: Didot, "Bodoni 72", serif;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 1;
-    text-align: center;
-  }
+.publisher-asterisk-glyph {
+  display: block;
+  box-sizing: content-box;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 13.06px 0 0;
+  color: #fef0d2;
+  font-family: Didot, "Bodoni 72", serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+}
 
 
 /* =========================================================
    BACCHUS-LOGO EN ONDERTITEL
    ========================================================= */
 
-   /*.publisher-emblem {
-    width: 220px;
-    height: 220px;
-    margin: 0 auto 32px;
-    padding: 4px;
-    border: 2px solid #132244;
-    border-radius: 50%;
-    background: #fff;
-    box-sizing: border-box;
-  }
+.publisher-masthead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
 
-  .publisher-emblem img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 50%;
-  }*/
+.publisher-masthead img {
+  display: block;
+  width: 100%;
+  max-width: 330px;
+  height: auto;
+  object-fit: contain;
+}
 
-  .publisher-masthead {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-  }
+.bacchus-logo-picture {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
 
-  .publisher-masthead img {
-    display: block;
-    width: 100%;
-    max-width: 330px;
-    height: auto;
-    object-fit: contain;
-  }
+.publisher-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+}
 
-  .bacchus-logo-picture {
-    display: block;
-    width: 100%;
-    margin: 0;
-  }
+.publisher-hero {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
 
-  .publisher-wrapper {
-    box-sizing: border-box;
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 32px 32px 32px;
-  }
+.bacchus-logo {
+  display: block;
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  margin: -15px auto 0;
+}
 
-  .publisher-hero {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto 40px;
-    text-align: center;
-  }
-
-  .bacchus-logo {
-    display: block;
-    width: 100%;
-    max-width: 760px;
-    height: auto;
-    margin: -15px auto 0;
-  }
-
-  .publisher-hero .page-intro {
-    width: 100%;
-    max-width: 760px;
-    margin: 0 auto;
-    color: #8b2a19;
-    font-size: 1.35rem;
-    line-height: 1.45;
-  }
+.publisher-hero .page-intro {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  color: #8b2a19;
+  font-size: 1.35rem;
+  line-height: 1.45;
+}
 
 
 /* =========================================================
    INHOUD
    ========================================================= */
 
-   .publisher-page {
-    width: 100%;
-    max-width: 860px;
-    margin: 0 auto;
-    color: #132244;
-    font-family: "nobel", sans-serif;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.7;
-  }
+.publisher-page {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  color: #132244;
+  font-family: "nobel", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.7;
+}
 
-  .publisher-page p {
-    margin: 0 0 1.4rem;
-  }
+.publisher-page p {
+  margin: 0 0 1.4rem;
+}
 
-  .publisher-page h2 {
-    margin: 3rem 0 1rem;
-    color: #132244;
-    font-size: 2.2rem;
-    font-weight: normal;
-    line-height: 1.2;
-    text-align: left;
-  }
+.publisher-page h2 {
+  margin: 3rem 0 1rem;
+  color: #132244;
+  font-size: 2.2rem;
+  font-weight: normal;
+  line-height: 1.2;
+  text-align: left;
+}
 
-  .publisher-page h3 {
-    margin: 2rem 0 0.5rem;
-    color: #132244;
-    font-size: 1.5rem;
-    font-weight: normal;
-    line-height: 1.3;
-  }
+.publisher-page h3 {
+  margin: 2rem 0 0.5rem;
+  color: #132244;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.3;
+}
 
-  .publisher-page a {
-    color: #8b2a19;
-  }
+.publisher-page a {
+  color: #8b2a19;
+}
 
-  .publisher-page a:hover,
-  .publisher-page a:focus {
-    color: #132244;
-  }
+.publisher-page a:hover,
+.publisher-page a:focus {
+  color: #132244;
+}
 
-  .publisher-page h2,
-  .publisher-page h3,
-  .publisher-release-title,
-  .publisher-release-author {
-    font-family: "Nobel", sans-serif;
-    font-weight: 600;
-  }
+.publisher-page h2,
+.publisher-page h3,
+.publisher-release-title,
+.publisher-release-author {
+  font-family: "Nobel", sans-serif;
+  font-weight: 600;
+}
 
 
 /* =========================================================
    INTRODUCTIE
    ========================================================= */
 
-   .publisher-introduction {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+.publisher-introduction {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  .publisher-introduction p:last-child {
-    margin-bottom: 0;
-  }
+.publisher-introduction p:last-child {
+  margin-bottom: 0;
+}
 
 
 /* =========================================================
    UITGELICHTE UITGAVE
    ========================================================= */
 
-   .publisher-release {
-    position: relative;
-    left: 50%;
-    box-sizing: border-box;
-    width: 100vw;
-    margin: 0 0 4.5rem;
-    margin-left: -50vw;
-    background: #ffffff;
-  }
+.publisher-release {
+  position: relative;
+  left: 50%;
+  box-sizing: border-box;
+  width: 100vw;
+  margin: 0 0 4.5rem;
+  margin-left: -50vw;
+  background: #ffffff;
+}
 
-  .publisher-release-block {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    color: inherit !important;
-    text-decoration: none !important;
-  }
+.publisher-release-block {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: inherit !important;
+  text-decoration: none !important;
+}
 
-  .publisher-release-block:hover,
-  .publisher-release-block:focus {
-    color: inherit !important;
-    text-decoration: none !important;
-  }
+.publisher-release-block:hover,
+.publisher-release-block:focus {
+  color: inherit !important;
+  text-decoration: none !important;
+}
 
-  .publisher-release-inner {
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns:
+.publisher-release-inner {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns:
     minmax(320px, 1fr)
     minmax(320px, 0.95fr)
     minmax(320px, 1fr);
-    align-items: center;
-    gap: 52px;
-    width: 100%;
-    max-width: 1540px;
-    min-height: 500px;
-    margin: 0 auto;
-    padding: 58px 64px;
-  }
+  align-items: center;
+  gap: 52px;
+  width: 100%;
+  max-width: 1540px;
+  min-height: 500px;
+  margin: 0 auto;
+  padding: 58px 64px;
+}
 
 
 /* =========================================================
    OMSLAG
    ========================================================= */
 
-   .publisher-release-cover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-  }
+.publisher-release-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
 
-  .publisher-release-cover img {
-    display: block;
-    width: 100%;
-    max-width: 420px;
-    height: auto;
-    object-fit: contain;
-    box-shadow: 0 12px 28px rgba(19, 34, 68, 0.18);
-    transition:
+.publisher-release-cover img {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 12px 28px rgba(19, 34, 68, 0.18);
+  transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
-  }
+}
 
 
 /* =========================================================
    TEKST
    ========================================================= */
 
-   .publisher-release-copy {
-    align-self: center;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
+.publisher-release-copy {
+  align-self: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-  .publisher-release-title {
-    margin: 0 0 0.75rem !important;
-    color: #132244 !important;
-    font-size: 2rem !important;
-    font-weight: 600 !important;
-    line-height: 1.16 !important;
-    text-align: left !important;
-  }
+.publisher-release-title {
+  margin: 0 0 0.75rem !important;
+  color: #132244 !important;
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+  line-height: 1.16 !important;
+  text-align: left !important;
+}
 
-  .publisher-release-author {
-    margin: 0 0 1.7rem;
-    color: #8f3319;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.3;
-  }
+.publisher-release-author {
+  margin: 0 0 1.7rem;
+  color: #8f3319;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
 
-  .publisher-release-description {
-    max-width: 31rem;
-    margin: 0;
-    color: #132244;
-    font-size: 1.15rem;
-    line-height: 1.55;
-  }
+.publisher-release-description {
+  max-width: 31rem;
+  margin: 0;
+  color: #132244;
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
 
-  .publisher-release-meta {
-    margin: 1.5rem 0 0;
-    color: #132244;
-    font-size: 1.15rem;
-    line-height: 1.55;
-  }
+.publisher-release-meta {
+  margin: 1.5rem 0 0;
+  color: #132244;
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
 
-  .publisher-release-actions {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 12px;
-    width: 100%;
-    margin-top: 1.5rem;
-  }
+.publisher-release-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-top: 1.5rem;
+}
 
-  .publisher-release-button,
-  .publisher-release-info-button {
-    display: inline-block;
-    padding: 0.45rem 1rem;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.2;
-    text-decoration: none !important;
-    border: 1px solid #132244;
-    cursor: pointer;
-    transition:
+.publisher-release-button,
+.publisher-release-info-button {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border: 1px solid #132244;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition:
     color 0.2s ease,
     background-color 0.2s ease;
-  }
+}
 
-  .publisher-release-button {
-    color: #ffffff !important;
-    background-color: #132244;
-  }
+.publisher-release-button {
+  color: #ffffff !important;
+  background-color: #132244;
+}
 
-  .publisher-release-button:hover,
-  .publisher-release-button:focus-visible {
-    color: #132244 !important;
-    background-color: #ffffff;
-    text-decoration: none !important;
-  }
+.publisher-release-button:hover,
+.publisher-release-button:focus-visible {
+  color: #132244 !important;
+  background-color: #ffffff;
+  text-decoration: none !important;
+}
 
-  .publisher-release-info-button {
-    color: #132244 !important;
-    background-color: transparent;
-  }
+.publisher-release-info-button {
+  color: #132244 !important;
+  background-color: transparent;
+}
 
-  .publisher-release-info-button:hover,
-  .publisher-release-info-button:focus-visible {
-    color: #ffffff !important;
-    background-color: #132244;
-    text-decoration: none !important;
-  }
+.publisher-release-info-button:hover,
+.publisher-release-info-button:focus-visible {
+  color: #ffffff !important;
+  background-color: #132244;
+  text-decoration: none !important;
+}
 
 
-/* Eventueel later toe te voegen quote */
+/* =========================================================
+   EVENTUELE QUOTE
+   ========================================================= */
 
 .publisher-release-quote {
   margin: 2rem 0 0;
   padding: 0;
+  border: 0;
   color: #132244;
   font-size: 1.12rem;
   font-style: italic;
   line-height: 1.5;
-  border: 0;
 }
 
 .publisher-release-quote cite {
@@ -435,33 +418,32 @@
    BINNENBEELD
    ========================================================= */
 
-   .publisher-release-image,
-   .publisher-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0;
-  }
+.publisher-release-image,
+.publisher-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
 
-  .publisher-release-image img {
-    display: block;
-    width: 75%;
-    max-width: 380px;
-    height: auto;
-    max-height: 380px;
-    object-fit: contain;
-    transition: transform 0.2s ease;
-  }
+.publisher-release-image img {
+  display: block;
+  width: 75%;
+  max-width: 380px;
+  height: auto;
+  max-height: 380px;
+  object-fit: contain;
+  transition: transform 0.2s ease;
+}
 
-  .publisher-icon img {
-    display: block;
-    width: 75%;
-    max-width: 380px;
-    height: auto;
-    max-height: 280px;
-    object-fit: contain;
-/*    transition: transform 0.2s ease;*/
+.publisher-icon img {
+  display: block;
+  width: 75%;
+  max-width: 380px;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
 }
 
 .publisher-release-block:hover .publisher-release-cover img,
@@ -477,9 +459,8 @@
 
 .publisher-contact {
   width: 100%;
-  margin: 4rem auto 0;
+  margin: 4rem auto 30px;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .publisher-contact p {
@@ -490,331 +471,331 @@
   display: inline-block;
 }
 
+
 /* =========================================================
    STAPELEN
    ========================================================= */
 
-   @media screen and (max-width: 1050px) {
-
-    .publisher-release {
-      margin-top: 3.5rem;
-      margin-bottom: 3.5rem;
-    }
-
-    .publisher-release-inner {
-      grid-template-columns: 1fr;
-      gap: 44px;
-      min-height: 0;
-      padding: 52px 40px;
-    }
-
-    .publisher-release-cover {
-      order: 1;
-    }
-
-    .publisher-release-cover img {
-      width: 100%;
-      max-width: 430px;
-    }
-
-    .publisher-release-copy {
-      order: 2;
-      width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
-      padding: 0;
-    }
-
-    .publisher-release-title {
-      font-size: 2rem !important;
-    }
-
-    .publisher-release-description {
-      max-width: 38rem;
-    }
-
-    .publisher-release-image {
-      order: 3;
-      width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    .publisher-release-image img {
-      width: 75%;
-      max-width: 440px;
-      max-height: none;
-    }
+@media screen and (max-width: 1050px) {
+  .publisher-release {
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
   }
+
+  .publisher-release-inner {
+    grid-template-columns: 1fr;
+    gap: 44px;
+    min-height: 0;
+    padding: 52px 40px;
+  }
+
+  .publisher-release-cover {
+    order: 1;
+  }
+
+  .publisher-release-cover img {
+    width: 100%;
+    max-width: 430px;
+  }
+
+  .publisher-release-copy {
+    order: 2;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .publisher-release-title {
+    font-size: 2rem !important;
+  }
+
+  .publisher-release-description {
+    max-width: 38rem;
+  }
+
+  .publisher-release-image {
+    order: 3;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .publisher-release-image img {
+    width: 75%;
+    max-width: 440px;
+    max-height: none;
+  }
+}
 
 
 /* =========================================================
    MOBIEL
    ========================================================= */
 
-   @media screen and (max-width: 640px) {
-
-    .publisher-banner,
-    .publisher-banner-inner,
-    .publisher-home-link {
-      height: 42px;
-    }
-
-    .publisher-home-link {
-      width: 42px;
-    }
-
-    .publisher-asterisk-glyph {
-      padding-top: 12.33px;
-      font-size: 34px;
-    }
-
-    .publisher-wrapper {
-      padding: 16px 16px 0px;
-    }
-
-    .publisher-masthead {
-      width: 100%;
-      margin: 0 auto 12px;
-    }
-
-    .publisher-masthead img {
-      display: block;
-      width: 100%;
-      max-width: 210px;
-      height: auto;
-      margin: 0 auto;
-    }
-
-    .publisher-hero {
-      width: 100%;
-      margin: 0 auto 16px;
-      transform: translateY(-24px);
-    }
-
-    .bacchus-logo-picture {
-      display: block;
-      width: 100%;
-      margin: 0;
-    }
-
-    .bacchus-logo {
-      display: block;
-      width: 60%;
-      max-width: 270px;
-      height: auto;
-      margin: 0 auto;
-    }
-
-    .publisher-page {
-      width: 100%;
-      max-width: 100%;
-      font-size: 0.98rem;
-      line-height: 1.48;
-    }
-
-    .publisher-page p {
-      margin-bottom: 1rem;
-    }
-
-    .publisher-introduction {
-      box-sizing: border-box;
-      width: 100%;
-      max-width: 340px;
-      margin: 0 auto;
-      padding: 0;
-      font-size: 1.15rem;
-      line-height: 1.55;
-      transform: translateY(-10px);
-    }
-
-    .publisher-introduction p {
-      margin: 0;
-    }
-
-    .publisher-page h2 {
-      margin-top: 2.2rem;
-      margin-bottom: 0.85rem;
-      font-size: 1.65rem;
-      line-height: 1.2;
-    }
-
-    .publisher-page h3 {
-      margin-top: 1.75rem;
-      margin-bottom: 0.45rem;
-      font-size: 1.2rem;
-      line-height: 1.25;
-    }
-
-    .publisher-release {
-      margin-bottom: 0;
-    }
-
-    .publisher-release-inner {
-      grid-template-columns: 1fr;
-      gap: 0;
-      min-height: 0;
-      padding: 30px 16px 34px;
-    }
-
-    .publisher-release-cover {
-      order: 1;
-      width: 100%;
-      margin: 0 0 24px;
-    }
-
-    .publisher-release-cover img {
-      width: 82vw;
-      max-width: 320px;
-      height: auto;
-    }
-
-    .publisher-release-copy {
-      order: 2;
-      width: 100%;
-      max-width: 340px;
-      margin: 0 auto 30px;
-      padding: 0;
-      transform: none !important;
-    }
-
-    .publisher-release-title {
-      margin: 0 0 0.55rem !important;
-      font-size: 1.65rem !important;
-      line-height: 1.13 !important;
-    }
-
-    .publisher-release-author {
-      margin: 0 0 0.9rem;
-      font-size: 1.08rem;
-      line-height: 1.3;
-    }
-
-    .publisher-release-description,
-    .publisher-release-meta {
-      width: 100%;
-      max-width: none;
-      font-size: 0.98rem;
-      line-height: 1.48;
-    }
-
-    .publisher-release-description {
-      margin: 0;
-    }
-
-    .publisher-release-meta {
-      margin: 1rem 0 0;
-    }
-
-    .publisher-release-actions {
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 1rem;
-    }
-
-    .publisher-release-button,
-    .publisher-release-info-button {
-      padding: 0.4rem 0.75rem;
-      font-size: 0.9rem;
-    }
-
-    .publisher-release-image {
-      order: 3;
-      width: 100%;
-      max-width: 320px;
-      margin: 0 auto;
-    }
-
-    .publisher-release-image img {
-      width: 70%;
-      max-width: 260px;
-      height: auto;
-      max-height: none;
-    }
-
-    .publisher-release + h2 {
-      margin-top: 2rem;
-    }
-
-    .publisher-footer-link {
-      font-size: 0.8rem;
-    }
-
-    .publisher-footer-logo {
-      height: 1em;
-    }
-
-    .publisher-contact {
-      box-sizing: border-box;
-      width: 100%;
-      margin: 0 auto;
-      padding: 3rem 0;
-      text-align: center;
-    }
-
-    .publisher-icon {
-      transform: translateY(-20px);
-    }
+@media screen and (max-width: 640px) {
+  .publisher-banner,
+  .publisher-banner-inner,
+  .publisher-home-link {
+    height: 42px;
   }
+
+  .publisher-home-link {
+    width: 42px;
+  }
+
+  .publisher-asterisk-glyph {
+    padding-top: 12.33px;
+    font-size: 34px;
+  }
+
+  .publisher-wrapper {
+    padding: 16px 16px 0;
+  }
+
+  .publisher-masthead {
+    width: 100%;
+    margin: 0 auto 12px;
+  }
+
+  .publisher-masthead img {
+    display: block;
+    width: 100%;
+    max-width: 210px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .publisher-hero {
+    width: 100%;
+    margin: 0 auto 16px;
+    transform: translateY(-24px);
+  }
+
+  .bacchus-logo-picture {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .bacchus-logo {
+    display: block;
+    width: 60%;
+    max-width: 270px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .publisher-page {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.48;
+  }
+
+  .publisher-page p {
+    margin-bottom: 1rem;
+  }
+
+  .publisher-introduction {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 40px;
+    padding: 0;
+    font-size: 1.15rem;
+    line-height: 1.55;
+    transform: translateY(-10px);
+  }
+
+  .publisher-introduction p {
+    margin: 0;
+  }
+
+  .publisher-page h2 {
+    margin-top: 2.2rem;
+    margin-bottom: 0.85rem;
+    font-size: 1.65rem;
+    line-height: 1.2;
+  }
+
+  .publisher-page h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.45rem;
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  .publisher-release {
+    margin-top: 0 !important;
+    margin-bottom: 0;
+  }
+
+  .publisher-release-inner {
+    grid-template-columns: 1fr;
+    gap: 0;
+    min-height: 0;
+    padding: 56px 16px 64px;
+  }
+
+  .publisher-release-cover {
+    order: 1;
+    width: 100%;
+    margin: 0 0 24px;
+  }
+
+  .publisher-release-cover img {
+    width: 82vw;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .publisher-release-copy {
+    order: 2;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 30px;
+    padding: 0;
+    transform: none !important;
+  }
+
+  .publisher-release-title {
+    margin: 0 0 0.55rem !important;
+    font-size: 1.65rem !important;
+    line-height: 1.13 !important;
+  }
+
+  .publisher-release-author {
+    margin: 0 0 0.9rem;
+    font-size: 1.08rem;
+    line-height: 1.3;
+  }
+
+  .publisher-release-description,
+  .publisher-release-meta {
+    width: 100%;
+    max-width: none;
+    font-size: 0.98rem;
+    line-height: 1.48;
+  }
+
+  .publisher-release-description {
+    margin: 0;
+  }
+
+  .publisher-release-meta {
+    margin: 1rem 0 0;
+  }
+
+  .publisher-release-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+
+  .publisher-release-button,
+  .publisher-release-info-button {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .publisher-release-image {
+    order: 3;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .publisher-release-image img {
+    width: 70%;
+    max-width: 260px;
+    height: auto;
+    max-height: none;
+  }
+
+  .publisher-release + h2 {
+    margin-top: 2rem;
+  }
+
+  .publisher-footer-link {
+    font-size: 0.8rem;
+  }
+
+  .publisher-footer-logo {
+    height: 1em;
+  }
+
+  .publisher-contact {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .publisher-icon {
+    transform: translateY(-20px);
+  }
+}
 
 
 /* =========================================================
    FOOTER
    ========================================================= */
 
-   .publisher-footer {
-    display: block;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background: #ea505a;
-  }
+.publisher-footer {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ea505a;
+}
 
-  .publisher-footer .publisher-banner {
-    margin: 0;
-    padding: 0;
-    background: #ea505a;
-  }
+.publisher-footer .publisher-banner {
+  margin: 0;
+  padding: 0;
+  background: #ea505a;
+}
 
-  .publisher-footer-link {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    color: #ffffff !important;
-    font-size: smaller;
-    line-height: 1;
-    text-decoration: none !important;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-  }
+.publisher-footer-link {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #ffffff !important;
+  font-size: smaller;
+  line-height: 1;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
 
-  .publisher-footer-link:hover,
-  .publisher-footer-link:focus {
-    color: #ffffff !important;
-    text-decoration: none !important;
-    opacity: 0.65;
-  }
+.publisher-footer-link:hover,
+.publisher-footer-link:focus {
+  color: #ffffff !important;
+  text-decoration: none !important;
+  opacity: 0.65;
+}
 
-  .publisher-footer-link:focus-visible {
-    outline: 2px solid #ffffff;
-    outline-offset: -4px;
-  }
+.publisher-footer-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: -4px;
+}
 
-  .publisher-footer-powered {
-    display: block;
-    line-height: 1;
-  }
+.publisher-footer-powered {
+  display: block;
+  line-height: 1;
+}
 
-  .publisher-footer-logo {
-    display: block;
-    width: auto;
-    height: 1em;
-    margin-left: 0.3em;
-    object-fit: contain;
-    filter: brightness(0) invert(1);
-  }
+.publisher-footer-logo {
+  display: block;
+  width: auto;
+  height: 1em;
+  margin-left: 0.3em;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
