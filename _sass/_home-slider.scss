@@ -501,8 +501,8 @@ body.home-slider-page {
 /* Bestelknop */
 
 .home-intro__button--primary {
-  border-color: #ea505a;
-  background-color: #ea505a;
+  border-color: #eb6850;
+  background-color: #eb6850;
   color: #fff !important;
 }
 
@@ -597,6 +597,7 @@ body.home-slider-page {
  */
 
 @media (max-width: 760px) {
+  @media (max-width: 760px) {
   .home-hero {
     --mobile-viewport-height: 100vh;
     --mobile-viewport-height: 100dvh;
@@ -631,10 +632,33 @@ body.home-slider-page {
       )
     );
 
-    height: var(--mobile-viewport-height);
+    --mobile-book-height: min(
+      54dvh,
+      calc(
+        var(--mobile-available-height) -
+        46px -
+        18px -
+        28px
+      )
+    );
+
+    height: 100vh;
+    height: 100lvh;
+
     min-height: 0;
     max-height: none;
+
+    background: #eb6850;
   }
+
+  .home-slider,
+  .home-slider__viewport,
+  .home-slider__slides {
+    height: var(--mobile-viewport-height);
+  }
+
+  /* de rest van je mobiele CSS blijft staan */
+}
 
   .home-hero__badges {
     top: var(--mobile-badge-top);
