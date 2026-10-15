@@ -8,9 +8,24 @@ html {
 body {
   background-color: $brand-color !important;
   color: $text-color;
-  font-family: $font-family;
+  font-family: $body-font;
   font-size: 1.3125em;
   line-height: 1.5;
+}
+
+.post-content p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  font-family: $heading-font;
+  font-weight: 600;
 }
 
 h1 {

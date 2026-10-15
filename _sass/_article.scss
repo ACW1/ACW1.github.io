@@ -20,13 +20,14 @@
 }
 
 .post > h1 {
-  font-family: $font-family;
-  font-size: 2em;
+  font-family: $heading-font;
+/*  font-size: 2em;*/
   max-width: 48rem;
   padding: 2em 1em;
   text-align: center;
+  font-weight: 600;
   @media only screen and (max-width: 1500px) {
-    font-size: 1.9em;
+/*    font-size: 1.9em;*/
     padding: 1.5em 1em;
   }
   @media only screen and (max-width: 450px) {
@@ -36,7 +37,7 @@
 }
 
 .post p {
-  font-family: $font-family;
+  font-family: $body-font;
   text-align: justify;
   // text-indent: 1.5em;
   text-justify: inter-word;
@@ -71,7 +72,7 @@
 }
 
 .post-meta {
-  font-family: $font-family;
+  font-family: $body-font;
   margin-bottom: 2em;
   margin-top: 2em;
   text-align: right;

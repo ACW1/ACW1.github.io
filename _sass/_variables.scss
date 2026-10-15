@@ -10,7 +10,9 @@ $head-line-color:	  	#ea505a;
 $light-head-line-color: lighten($head-line-color, 15%); 
 $sidebar-color:		  	#CFF2FF;
 $asterisk-color:		#38494f;
-$font-family:         	"EB Garamond", Garamond, "Times New Roman", serif;
+$font-family:         	"Neue Haas Grotesk", "proxima-nova", Garamond, "Times New Roman", serif;
+$body-font: "Neue Haas Grotesk", proxima-nova, Georgia, "Times New Roman", serif;
+$heading-font: Didot, "Bodoni MT", serif;
 /* $sidebar-font:        	proxima-nova, sans-serif; */
 $sidebar-font:        	Gill Sans, sans-serif;
 $band-capital:			1.25em;
