@@ -43,28 +43,34 @@
 }
 
 #logo {
-  /* max-width: 350px; */
-  max-width: 310px;
-  margin-top: 2em;
-  // margin-bottom: 0.75em;
-  margin-bottom: 1em;
+  max-width: 202px;
+  margin-top: 1.3em;
+  margin-bottom: 0.65em;
 }
 
 #asterisk {
   font-family: Didot;
   font-weight: bold;
-  font-size: 2.1em;
+  font-size: 1.365em;
   line-height: 1.7em;
   color: $asterisk-color;
-  &:hover, &:active {
-  color: $head-line-color;
+
+  &:hover,
+  &:active {
+    color: $head-line-color;
   }
 }
 
 .relative {
   position: relative;
   margin: auto;
-  width: 310px;
+  width: 202px;
+}
+
+a#areah {
+  position: absolute;
+  top: 13px;
+  right: -1px;
 }
 
 a#areah:link {
@@ -75,12 +81,12 @@ a#areah:focus {
   outline: none;
 }
 
-a#areah {
+/*a#areah {
   position: absolute;
   top: 20px;
   right: -2px;
 }
-
+*/
 .undertext {
   position: relative;
   color: $muted-text-color;
@@ -90,7 +96,7 @@ a#areah {
 }
 
 .undertext p {
-  font-family: $font-family;
+  font-family: $heading-font;
   font-style: italic;
   font-size: 1.5rem;
   font-weight: 600;
@@ -134,4 +140,50 @@ a#areah {
 .plak.is-stuck {
   margin: -20px 0 !important;
   transition: margin 0.5s ease !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .post {
+    margin-top: 0 !important;
+  }
+  .post-content h2 {
+    font-size: 1.35em;
+  }
+
+  .plak {
+    height: 54px;
+    margin: 0 !important;
+    padding: 0;
+  }
+
+  .relative {
+    width: 150px;
+    height: 54px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #logo {
+    display: block;
+    width: 150px;
+    max-width: 150px;
+    margin: 0;
+  }
+
+  #asterisk {
+    font-size: 1.05em;
+  }
+
+  a#areah {
+    top: 2px;
+    right: -1px;
+  }
+
+  .plak.is-stuck,
+  .lijm.is-stuck {
+    margin: 0 !important;
+  }
 }

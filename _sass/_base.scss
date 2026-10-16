@@ -25,7 +25,7 @@ body {
 .post-content h5,
 .post-content h6 {
   font-family: $heading-font;
-  font-weight: 600;
+/*  font-weight: 600;*/
 }
 
 h1 {
@@ -35,7 +35,9 @@ h1 {
 
 h2 {
   font-size: 2em;
-  margin: 1em auto;
+/*  margin: 1em auto;*/
+margin-top: 2rem !important;
+  margin-bottom: .5rem !important;
   text-align: center;
 }
 
@@ -159,7 +161,10 @@ figcaption a, p a {
   margin: auto;
   padding: 1em 0;
 } */
-
+h2.content-title {
+  font-size: 1em !important;
+  margin-bottom: 20px !important;
+}
 .content-title {
   margin-bottom: 2em;
   text-align: center;

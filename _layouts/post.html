@@ -29,18 +29,19 @@ layout: default
 
 <article class="post h-entry" itemscope itemtype="https://schema.org/BlogPosting" id="main" role="article" aria-label="Content">
 
-  {% if page.title != "" %}
-    <h1 class="post-title divided p-name" itemprop="name headline">
-      {{ page.title }}
-    </h1>
-  {% endif %}
+ {% if page.backgrim %}
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/{{- page.backgrim -}}" class="featured-image-post">
+{% endif %}
 
-  <div class="post-content e-content" itemprop="articleBody">
-    {% if page.backgrim %}
-    <img src="{{ site.url }}{{ site.baseurl }}/assets/images/{{- page.backgrim -}}" class="featured-image-post">
-    {% endif %}
-    {{ content }}
-  </div>
+{% if page.title != "" %}
+  <h1 class="post-title divided p-name" itemprop="name headline">
+    {{ page.title }}
+  </h1>
+{% endif %}
+
+<div class="post-content e-content" itemprop="articleBody">
+  {{ content }}
+</div>
 
   <div class="post-meta">
     {% if page.author %}
