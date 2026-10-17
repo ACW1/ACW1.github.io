@@ -57,3 +57,14 @@ layout: default
     {% include disqus-comments.html %}
   {% endif %}
 </article>
+
+
+
+  <script>
+document.querySelectorAll('.post a').forEach(function(link) {
+  link.setAttribute('target', '_blank');
+  link.setAttribute('rel', 'noopener noreferrer');
+});
+</script>
+
+

@@ -385,17 +385,44 @@ img + em {
 .image-wrapper {
   // text-align: center;
   display: inline-block;
+  margin-top: 1.5em;
 
   .image-caption {
-    font-family: $sidebar-font;
+    font-family: $body-font;
     font-size: .8em;
     line-height: 1.25em;
-    text-align: right;
+    text-align: left;
     // margin-bottom: 2em;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     opacity: .7;
     padding-top: 5px;
     // margin-top: -5px;
+  }
+
+}
+
+.image-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.caption-title {
+  font-weight: 600;
+}
+
+.caption-source {
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .image-caption {
+    display: block;
+  }
+
+  .caption-source {
+    display: block;
+    text-align: left;
   }
 }
 
