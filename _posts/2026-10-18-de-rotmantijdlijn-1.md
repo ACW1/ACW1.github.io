@@ -10,7 +10,7 @@ layout: post
 addendum: ja
 ---
 
-Gerrit Theodoor Rotman (1893-1944) was bepaald geen Groninger, al was hij er geboren. De ineenstorting van zijn vaders onderneming verstoorde het schieten van wortel. De hele Groningse boel werd geliquideerd en binnen een half jaar na de blijde gebeurtenis woonden moeder en zoon bij oma in Vlaardingen. Enkele maanden daarvoor was vader al naar Amsterdam vertrokken.
+Gerrit Theodoor Rotman (1893-1944) was in Groningen geboren, maar hij was bepaald geen Groninger. De ineenstorting van zijn vaders onderneming verstoorde het schieten van wortel. De hele Groningse boel werd geliquideerd en binnen een half jaar na de blijde gebeurtenis woonden moeder en zoon bij oma in Vlaardingen. Enkele maanden daarvoor was vader al naar Amsterdam vertrokken.
 
 Gerrits ouders waren zelf ook slechts passanten in Groningen. Eind 1892 waren ze overgekomen uit Leeuwarden, maar ook daar hadden ze niet lang gewoond. Moeder Neeltje van Toor (1870-1940) kwam uit een Vlaardingse ondernemersfamilie, vader Adriaan Jacob Rotman (1870-1941) kwam uit Geesteren, bij Borculo, in de Achterhoek. (Niet te verwarren met het Overijsselse Geesteren bij Tubbergen.)
 
