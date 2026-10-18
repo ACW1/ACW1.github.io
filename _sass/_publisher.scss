@@ -295,6 +295,98 @@ body.publisher-body {
     box-shadow 0.2s ease;
 }
 
+.post-addendum {
+  margin-top: 2em;
+  border-top: 1px solid lightgray;
+}
+
+/*.post-addendum-main {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2.5em;
+  align-items: center;
+  margin-top: 2em;
+}*/
+
+.post-addendum p {
+  line-height: 1.5;
+  margin-top: 1.5em;
+}
+
+.post-addendum-main {
+  display: flex;
+  align-items: center;
+  margin-top: 1.4em;
+  justify-content: center;
+}
+
+.post-addendum-copy p {
+  font-family: $body-font;
+  font-size: inherit;
+  line-height: 1.5em;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 0;
+}
+
+.publisher-release-cover.addendum {
+  width: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+.publisher-release-cover.addendum img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+.post-addendum .publisher-release-actions {
+  display: flex;
+  gap: 1em;
+  margin-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+/*@media only screen and (max-width: 992px) {
+  .post-addendum .publisher-release-actions {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 100px;
+  margin-bottom: 1.5em;
+}*/
+
+@media only screen and (max-width: 600px) {
+
+  .post-addendum p {
+    text-align: center !important;
+    margin-bottom: -8px;
+  }
+  .post-addendum-main {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+/*    gap: 1.3em;*/
+  }
+
+  .publisher-release-cover.addendum {
+    width: inherit;
+    margin: 0 auto;
+  }
+
+ /* .post-addendum .publisher-release-actions {
+    flex-direction: column;
+  }*/
+  .post-addendum .publisher-release-actions {
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 100px;
+  margin-bottom: 1.5em;
+}
+}
 
 /* =========================================================
    TEKST
@@ -390,6 +482,19 @@ body.publisher-body {
   text-decoration: none !important;
 }
 
+.post-addendum .publisher-release-button:hover,
+.post-addendum .publisher-release-button:focus-visible {
+  color: #132244 !important;
+  background-color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.post-addendum .publisher-release-info-button:hover,
+.post-addendum .publisher-release-info-button:focus-visible {
+  color: #ffffff !important;
+  background-color: #132244 !important;
+  text-decoration: none !important;
+}
 
 /* =========================================================
    EVENTUELE QUOTE

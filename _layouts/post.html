@@ -33,6 +33,20 @@ layout: default
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/{{- page.backgrim -}}" class="featured-image-post">
 {% endif %}
 
+<!-- {% if page.subtitle != "" %}
+  <h5 class="post-subtitle">
+    <span>{{ page.subtitle }}</span>
+    <span class="subtitle-number">{{ page.subtitle_number }}</span>
+  </h5>
+{% endif %} -->
+
+{% if page.subtitle != "" %}
+  <div class="post-subtitle">
+    <span class="post-subtitle__text">{{ page.subtitle }}</span>
+    <span class="subtitle-number">{{ page.subtitle_number }}</span>
+  </div>
+{% endif %}
+
 {% if page.title != "" %}
   <h1 class="post-title divided p-name" itemprop="name headline">
     {{ page.title }}
@@ -53,15 +67,18 @@ layout: default
     {% endif %}
   </div>
 
+   {% if page.addendum %}
+      {% include _addendum.html %}
+   {% endif %}
+
   {% if site.disqus.shortname %}
     {% include disqus-comments.html %}
   {% endif %}
+
 </article>
 
-
-
-  <script>
-document.querySelectorAll('.post a').forEach(function(link) {
+<script>
+document.querySelectorAll('.post a:not(.same-tab)').forEach(function(link) {
   link.setAttribute('target', '_blank');
   link.setAttribute('rel', 'noopener noreferrer');
 });

@@ -196,7 +196,7 @@ h1.content-title:hover {
 .post-date {
   font-family: $font-family;
   color: $muted-text-color;
-  display: block;
+/*  display: block;*/
   font-size: .7em;
   white-space: nowrap;
   text-align: right;
@@ -359,7 +359,7 @@ img + em {
 }
 
 .share-page {
-  font-family: $sidebar-font;
+/*  font-family: $heading-font;*/
   padding: 8px 15px;
   border-radius: 5px;
   float: left;

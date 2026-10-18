@@ -1,11 +1,13 @@
 ---
 title: Het erve Rotman
-subtitle: De Rotmantijdlijn 1
+subtitle: De Rotmantijdlijn
+subtitle_number: 1
 author: Arthur van Kruining
 category: comics
 backgrim: /rotman-1/het-spoor-terug.webp
-caption: Het sppor terug
+caption: Het spoor terug
 layout: post
+addendum: ja
 ---
 
 Gerrit Theodoor Rotman (1893-1944) was bepaald geen Groninger, al was hij er geboren. De ineenstorting van zijn vaders onderneming verstoorde het schieten van wortel. De hele Groningse boel werd geliquideerd en binnen een half jaar na de blijde gebeurtenis woonden moeder en zoon bij oma in Vlaardingen. Enkele maanden daarvoor was vader al naar Amsterdam vertrokken.
@@ -30,7 +32,7 @@ Al de geslachten dan, van Gerrit tot Geert, zijn acht geslachten; en van Geert t
 
 Tussen al die geslachtelijke winstpartijen door ging er in de rechte mannelijke lijn van Rotman wel iets opvallends verloren – de achternaam Rotman. Dat zit zo: tot 1811 was het in Oost-Nederland gebruikelijk om de achternaam te ontlenen aan de boerderij of het erf waar men woonde of was geboren. Aangezien Geert Rotmans kroost beperkt bleef tot twee dochters, Lutgert en Jenneken, moest de mannelijke opvolger van buiten komen. Zodoende bleef Lutgert Rotman na haar huwelijk Rotman heten en werd Berend Ruiters een Rotman. Hun kinderen kregen eveneens die achternaam. (Maar toen zoon Engbert trouwde met Aaltje Bruntink en de boerderij verliet, werd hij meneer Bruntink.)
 
-Er was dus een boerderij, een *erve Rotman*, in de buurt van Geesteren. Puur op basis van de mannelijke lijn kan de boerderij waar Berend Rotman né Ruiters vandaan kwam evengoed als bakermat worden aangeduid. Maar deze interesseert ons iets toch minder; simpelweg omdat zij niet de naam van onze stripheld draagt. Juist vanwege die naam willen we weten waar die Rotmanboerderij zich precies bevond – of nog bevindt.
+Er was dus een boerderij, een *erve Rotman*, in de buurt van Geesteren. Puur op basis van de mannelijke lijn kan de boerderij waar Berend Rotman né Ruiters vandaan kwam evengoed als bakermat worden aangeduid. Maar deze interesseert ons toch wat minder; simpelweg omdat zij niet de naam van onze stripheld draagt. Juist vanwege die naam willen we weten waar die Rotmanboerderij zich precies bevond – of nog bevindt.
 
 ## Het Rotmansdiekske
 
@@ -47,7 +49,7 @@ Een foto met uitzicht op een boerderij, getiteld *Rotman 1980*, suggereert dat e
 %}
 
 
-Daarom gezwind naar de [Topotijdreismachine van de Topografische Dienst](https://www.topotijdreis.nl/kaart/1980/@233194,461188,10.43)!
+Daarom gezwind naar de Topotijdreismachine van de Topografische Dienst!
 
 Helaas… op de kaarten die tot 1815 teruggaan, staan wel boerderijen aangegeven, maar bij geen enkele boerderij staat de naam Rotman. Wat echter wél te zien is – in de kaarten van 1850 t/m 1889 – is de naam *Rotmansbrug*. Dit bruggetje in het Rotmansdiekske zorgde ervoor dat kerkgangers niet met hun zondagse kleding door de Kattenbeek hoefden te waden op weg naar de kerk in Geesteren of Borculo. De noodzaak van overbrugging verdween toen midden jaren ’90 de Kattenbeek ter hoogte van het Rotmansdiekske werd afgekoppeld. Tot in de jaren 2000 was er nog een brugtekentje op de topografische kaarten te zien, maar de laatste jaren niet meer. De omgeving is te boomrijk om via Google Maps vast te kunnen stellen of er nog iets van de Rotmansbrug rest.
 
@@ -71,7 +73,7 @@ De laatste hoop was gevestigd op de kadastrale kaarten van de Rijksdienst voor h
     caption='<span class="caption-title">Rotman, verzamelplan Geesteren, Gelderland, 1828</span><span class="caption-source">Bron: <a href="https://beeldbank.cultureelerfgoed.nl/rce-mediabank/detail/99701e0c-94d7-11e5-a95d-9b5163da5c66/media/649a97b5-9a0b-0ce1-8652-b1c5ccf80f31?mode=detail&view=horizontal&rows=1&page=23&fq%5B%5D=search_s_entity_name:%22Kadastrale%20kaarten%22&fq%5B%5D=search_s_monuments_monument_county:%22Geesteren%22&sort=order_s_objectnummer%20asc">cultureelerfgoed.nl</a></span>'
 %}
 
-In het verzamelplan is Rotman nog maar een roze blokje, rechts van het *Voetpad van Borculo naar Geesteren*, het huidige Rotmansdiekske. Het *2e Blad* op de kaart verwijst naar het minuutplan van het gebied. Hieruit blijkt dat de percelen links van het pad *Het Rot* werden genoemd. (Niet De Rot, zoals ik even dacht. Dat *De* rechtsboven hoort bij *Sprakelberg*, tegenwoordig de naam en locatie van een begraafplaats bij Geesteren.)
+In het verzamelplan is Rotman nog maar een roze blokje, rechts van het *Voetpad van Borculo naar Geesteren*, het huidige Rotmansdiekske. Het *2e Blad* op de kaart verwijst naar het minuutplan van het gebied. Hieruit blijkt dat de percelen links van het pad *Het Rot* werden genoemd. (Niet *De* Rot. Dat *De* rechtsboven hoort bij *Sprakelberg*, tegenwoordig de naam en locatie van een begraafplaats bij Geesteren.)
 
 {% include image.html
     img="../../../../assets/images/rotman-1/het-rot-minuutplan.jpg"
@@ -89,9 +91,9 @@ Inzoomend op het erve Rotman wordt nog duidelijker dat de boerderij zich ter hoo
     caption='<span class="caption-title">Het erve Rotman</span><span class="caption-source">Bron: <a href="https://beeldbank.cultureelerfgoed.nl/rce-mediabank/detail/a75bebfe-94d7-11e5-a178-7f8607047731/media/432baea7-664a-4df4-2743-85f457ea542b?mode=detail&view=horizontal&rows=1&page=22&fq%5B%5D=search_s_entity_name:%22Kadastrale%20kaarten%22&fq%5B%5D=search_s_monuments_monument_county:%22Geesteren%22&sort=order_s_objectnummer%20asc">cultureelerfgoed.nl</a></span>'
 %}
 
- De naam *Het Rot* impliceert dat aan deze Rotmantak geen man met een grote rode baard ten grondslag hebben gelegen maar een *rode* (rade, roede, roet, rot, troet), een stuk land dat door het rooien van bomen geschikt is gemaakt voor bebouwing. Wanneer de rotmakers bezig waren om van het bos een rot voor Rotmannen te maken is onzeker. Op een kaart uit 1617 was op die plek al geen bos meer te zien. Eerdere kaartenmakers waren meer geïnteresseerd in de plaatselijke moerassen en vonden het kennelijk minder belangrijk om het onderscheid tussen akkers en bossen aan te geven.
+ De naam *Het Rot* impliceert dat aan deze Rotmantak geen man met een grote rode baard vooraf is gegaan maar een *rode* (rade, roede, roet, rot, troet), een stuk land dat door het rooien van bomen geschikt is gemaakt voor bebouwing. Wanneer de rotmakers bezig waren om van het bos een rot voor Rotmannen te maken is onzeker. Op een kaart uit 1617 was op die plek al geen bos meer te zien. Eerdere kaartenmakers waren meer geïnteresseerd in de plaatselijke moerassen en vonden het kennelijk minder belangrijk om het onderscheid tussen akkers en bossen aan te geven.
 
-In de zogenaamde oorspronkelijke aanwijzende tafel bij de kadastrale kaart is te zien welke percelen destijds van Rotman waren en welke Rotman dat was. Zo bezat de wever Antoon Rotman een perceel in Het Rot. En in Lemperhoek, boven Geesteren, stuitte ik op een perceel van een Hendrik Rotman. De percelen van het erve Rotman (653-655/657-660), plus een aantal in Het Rot, stonden echter op naam van...
+In de zogenaamde oorspronkelijke aanwijzende tafel bij de kadastrale kaart is te zien welke percelen destijds van Rotman waren en welke Rotman dat was. Zo bezat de wever Antoon Rotman een perceel in Het Rot. En in Lemperhoek, boven Geesteren, bevond zich een perceel van een Hendrik Rotman. De percelen van het erve Rotman (653-655/657-660), plus een aantal in Het Rot, stonden echter op naam van...
 
 {% include image.html
     img="../../../../assets/images/rotman-1/rotman-percelen.jpg"
@@ -108,7 +110,7 @@ De landbouwer Gerrit Rotman (1768-1851) was Jans kleinzoon. In 1800 trouwde hij 
 
 Arme Gerrit. Binnen honderd dagen verloor hij drie van zijn naasten. Wat was er aan de hand in Lemperhoek? Wat deden ze daar überhaupt?
 
-Toen Engele Rotman in 1822 trouwde met Roelof te Winkel (1799-1858) uit Ruurlo ging de bruidegom geen Roelof Rotman heten. Het echtpaar ging namelijk niet op Rotman ging wonen maar in het buurtschap Lemperhoek. Aangezien hij daar niet was geboren, had hij daar wellicht de beschikking over een boerderij verkregen en lag het meer voor de hand om daar een bestaan op te bouwen. Aangezien zijn schoonvader Gerrit er in 1851 zelf ook overleed, vraag je je af wie er na 1822 nog op Rotman woonde...
+Toen Engele Rotman in 1822 trouwde met Roelof te Winkel (1799-1858) uit Ruurlo ging de bruidegom geen Roelof Rotman heten. Het echtpaar ging namelijk niet op Rotman wonen maar in het buurtschap Lemperhoek. Aangezien hij daar niet was geboren, had hij daar wellicht de beschikking over een boerderij verkregen en lag het meer voor de hand om daar een bestaan op te bouwen. Aangezien zijn schoonvader Gerrit er in 1851 zelf ook overleed, vraag je je af wie er na 1822 nog op Rotman woonde...
 
 ## GRM|RTW 
 
@@ -130,8 +132,9 @@ Een gevelsteen wijst nog op de oude naam.
 
 *GRM RTW 184[5]* herinnert waarschijnlijk aan een verbouwing van de boerderij in dat jaar door de weduwnaars Gerrit Rotman en Roelof te Winkel. Was dit de manier om hun verdriet te verwerken? In 1845 was Gerrit 77 jaar oud en Roelof grotendeels 45. Voor wie hadden ze Rotman opgeknapt? De vijf overlevende (klein)dochters vlogen uit. Misschien was het voor de enige zoon, Garrit Jan, die toen vijf jaar was. 
 
-Hoe Rotman Daalwiek is geworden, is mij niet bekend. Ik weet alleen dat er in 1896 een huwelijksband was gesmeed tussen Daalwijk (Maria Christina) en een Rotman (de zoveelste Engbert). Deze Engbert vloeide voort uit de lijn Jan Rotman → Berend Rotman → Teunis Rotman → Engbert Rotman → Willem Rotman → Engbert Rotman. Die Jan Rotman kwamen we eerder tegen als eigenaar van Rotman en opa van de Gerrit Rotman die het erve rond 1828 bestierde. Teunis was dus zijn broer en de afsluitende Engbert zijn achterachterneef. 
+Hoe Rotman Daalwiek is geworden, is mij niet bekend. Ik weet alleen dat er in 1896 een huwelijksband was gesmeed tussen Daalwijk (Maria Christina) en een Rotman (de zoveelste Engbert). Deze Engbert vloeide voort uit de lijn Jan Rotman → Berend Rotman → Teunis Rotman → Engbert Rotman → Willem Rotman → Engbert Rotman. De eerste in de rij, Jan Rotman, kwamen we eerder tegen als eigenaar van Rotman en opa van de Gerrit Rotman die het erve rond 1828 bestierde. Teunis was dus zijn broer en de afsluitende Engbert zijn achterachterneef. 
 
-Het zal wel. Het is tijd om afscheid te nemen van de Achterhoekse Rotmannen. In deel 2 van de Rotmantijdlijn gaan we weer vooruit in de tijd en zal worden verklaard waarom G.Th. Rotman in Groningen ter wereld kwam.
+Het zal wel. Verdere opheldering omtrent de transformatie naar Daalwiek laten we als oefening voor de lezer. Het is tijd om afscheid te nemen van de Achterhoekse Rotmannen. In deel 2 van *De Rotmantijdlijn* gaan we weer vooruit in de tijd en zal worden verklaard waarom G.Th. Rotman in Groningen ter wereld kwam.
 
+*Met dank aan Yvonne Thompson voor het nodige genealogische spitwerk.*
 
