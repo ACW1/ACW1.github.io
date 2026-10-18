@@ -401,6 +401,10 @@ img + em {
 
 }
 
+.image-wrapper + h2 {
+  margin-top: 1rem !important;
+}
+
 .image-caption {
   display: flex;
   justify-content: space-between;

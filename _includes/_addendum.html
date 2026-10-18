@@ -1,35 +1,50 @@
 <div class="post-addendum">
-<p>
-        Lees ook het laatste, niet eerder in boekvorm verschenen, Pimpelmansverhaal van G.Th. Rotman.  
-      </p>
+
+  {% if page.lang == "eng" %}
+    <p>
+      Available now: the final Pimpelmans story by G.Th. Rotman, never before published in book form.
+    </p>
+  {% else %}
+    <p>
+      Lees ook het laatste, niet eerder in boekvorm verschenen, Pimpelmansverhaal van G.Th. Rotman.
+    </p>
+  {% endif %}
+
   <div class="post-addendum-main">
 
     <div class="post-addendum-copy">
-     <!--  <p>
-        Lees ook het laatste, niet eerder in boekvorm verschenen, Pimpelmansverhaal van G.Th. Rotman.  
-      </p> -->
     </div>
 
     <figure class="publisher-release-cover addendum">
-      <img
-        src="{{ site.baseurl }}/assets/images/uitgeverij-bacchus/pimpelmans-cover.jpg"
-        alt="Omslag van Mijnheer Pimpelmans heeft alweer pech">
-    </figure>
+  <img
+    src="{% if page.lang == 'eng' %}https://s3-eu-west-1.amazonaws.com/vior-cdn/pumbo/nl/covers/99178741015344960.jpg{% else %}{{ site.baseurl }}/assets/images/uitgeverij-bacchus/pimpelmans-cover.jpg{% endif %}"
+    alt="{% if page.lang == 'eng' %}Cover of Mr Pimpelmans Has Bad Luck Again{% else %}Omslag van Mijnheer Pimpelmans heeft alweer pech{% endif %}">
+</figure>
 
   </div>
 
   <div class="publisher-release-actions">
+
     <a
       class="publisher-release-info-button same-tab"
       href="{{ site.baseurl }}/uitgeverij-bacchus/">
-      Meer over het boek
+      {% if page.lang == "eng" %}
+        More about the book
+      {% else %}
+        Meer over het boek
+      {% endif %}
     </a>
 
     <a
-      class="publisher-release-button"
-      href="https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629">
-      Bestel
-    </a>
+  class="publisher-release-button"
+  href="{% if page.lang == 'eng' %}https://www.boekenbestellen.nl/boek/mr-pimpelmans-has-bad-luck-again/9789465339429{% else %}https://www.boekenbestellen.nl/boek/mijnheer-pimpelmans-heeft-alweer-pech/84629{% endif %}">
+  {% if page.lang == "eng" %}
+    Order
+  {% else %}
+    Bestel
+  {% endif %}
+</a>
+
   </div>
 
 </div>

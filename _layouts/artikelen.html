@@ -60,7 +60,9 @@ layout: default
         {% include post-list-item.html %}
       {% endfor %} -->
       {% for post in site.posts %}
-  {% include post-list-item.html %}
+  {% unless post.lang == 'eng' %}
+    {% include post-list-item.html %}
+  {% endunless %}
 {% endfor %}
     </ul>
 
@@ -89,7 +91,7 @@ layout: default
            <!--  <small><a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a> powered by <a href="https://jekyllrb.com">Jekyll</a></small> -->
           <small><p style="font-size: 12px;">Site inspired by the <a href="https://github.com/patdryburgh/hitchens">Hitchens Theme</a></p>
 
-          <p>© 2022 Arthur van Kruining</p></small>            
+          <p>© 2026 Arthur van Kruining</p></small>            
         </aside>
       </footer>
 
@@ -99,7 +101,9 @@ layout: default
 
     <ul class="post-list">
       {% for post in site.posts %}
-        {% include post-list-item.html %}
+       {% unless post.lang == 'eng' %}
+    {% include post-list-item.html %}
+  {% endunless %}
       {% endfor %}
     </ul>
   
