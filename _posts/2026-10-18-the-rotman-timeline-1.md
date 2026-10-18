@@ -11,7 +11,7 @@ addendum: yes
 lang: eng
 ---
 
-Gerrit Theodoor Rotman (1893-1944) was born in Groningen, but he was certainly nog Groninger. The collapse of his father’s business put an end to any chance of putting down roots. The entire Groningen operation was liquidated, and within six months of the happy event mother and son were living with grandmother in Vlaardingen. Father had already left for Amsterdam a few months earlier.
+Gerrit Theodoor Rotman (1893-1944) was born in Groningen, but he was certainly no Groninger. The collapse of his father’s business put an end to any chance of putting down roots. The entire Groningen operation was liquidated, and within six months of the happy event mother and son were living with grandmother in Vlaardingen. Father had already left for Amsterdam a few months earlier.
 
 Gerrit’s parents themselves were only passing through Groningen. They had arrived from Leeuwarden at the end of 1892, but had not lived there for long either. His mother, Neeltje van Toor (1870-1940), came from a family of entrepreneurs in Vlaardingen, while his father, Adriaan Jacob Rotman (1870-1941), came from Geesteren, near Borculo, in the Achterhoek. (Not to be confused with the Geesteren near Tubbergen in Overijssel.)
 
