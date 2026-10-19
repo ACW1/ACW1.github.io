@@ -108,7 +108,7 @@ In de rechte mannelijke lijn waren we na Gerrit Theodoor geen Gerrit meer tegeng
 
 De landbouwer Gerrit Rotman (1768-1851) was Jans kleinzoon. In 1800 trouwde hij met Essele Avink, die in 1842 in Lemperhoek overleed. Hun enige kind, Engele Rotman, overleed in 1842 in Lemperhoek. Hun kleinkind Garritdina overleed in 1842 in Lemperhoek.
 
-Arme Gerrit. Binnen honderd dagen verloor hij drie van zijn naasten. Wat was er aan de hand in Lemperhoek? Wat deden ze daar überhaupt?
+Arme Gerrit. Binnen honderd dagen verloor hij drie van zijn naasten. Wat was er aan de hand in Lemperhoek? En: wat deden ze daar überhaupt?
 
 Toen Engele Rotman in 1822 trouwde met Roelof te Winkel (1799-1858) uit Ruurlo ging de bruidegom geen Roelof Rotman heten. Het echtpaar ging namelijk niet op Rotman wonen maar in het buurtschap Lemperhoek. Aangezien hij daar niet was geboren, had hij daar wellicht de beschikking over een boerderij verkregen en lag het meer voor de hand om daar een bestaan op te bouwen. Aangezien zijn schoonvader Gerrit er in 1851 zelf ook overleed, vraag je je af wie er na 1822 nog op Rotman woonde...
 
@@ -132,7 +132,7 @@ Een gevelsteen wijst nog op de oude naam.
 
 *GRM RTW 184[5]* herinnert waarschijnlijk aan een verbouwing van de boerderij in dat jaar door de weduwnaars Gerrit Rotman en Roelof te Winkel. Was dit de manier om hun verdriet te verwerken? In 1845 was Gerrit 77 jaar oud en Roelof grotendeels 45. Voor wie hadden ze Rotman opgeknapt? De vijf overlevende (klein)dochters vlogen uit. Misschien was het voor de enige zoon, Garrit Jan, die toen vijf jaar was. 
 
-Hoe Rotman Daalwiek is geworden, is mij niet bekend. Ik weet alleen dat er in 1896 een huwelijksband was gesmeed tussen Daalwijk (Maria Christina) en een Rotman (de zoveelste Engbert). Deze Engbert vloeide voort uit de lijn Jan Rotman → Berend Rotman → Teunis Rotman → Engbert Rotman → Willem Rotman → Engbert Rotman. De eerste in de rij, Jan Rotman, kwamen we eerder tegen als eigenaar van Rotman en opa van de Gerrit Rotman die het erve rond 1828 bestierde. Teunis was dus zijn broer en de afsluitende Engbert zijn achterachterneef. 
+Hoe Rotman Daalwiek is geworden, is mij niet bekend. Ik weet alleen dat er in 1896 een huwelijksband was gesmeed tussen een Daalwijk (Maria Christina) en een Rotman (de zoveelste Engbert). Deze Engbert vloeide voort uit de lijn Jan Rotman → Berend Rotman → Teunis Rotman → Engbert Rotman → Willem Rotman → Engbert Rotman. De eerste in de rij, Jan Rotman, kwamen we eerder tegen als eigenaar van Rotman en opa van de Gerrit Rotman die het erve rond 1828 bestierde. Teunis was dus zijn broer en de afsluitende Engbert zijn achterachterneef. 
 
 Het zal wel. Verdere opheldering omtrent de transformatie naar Daalwiek laten we als oefening voor de lezer. Het is tijd om afscheid te nemen van de Achterhoekse Rotmannen. In deel 2 van *De Rotmantijdlijn* gaan we weer vooruit in de tijd en zal worden verklaard waarom G.Th. Rotman in Groningen ter wereld kwam.
 

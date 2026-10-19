@@ -33,7 +33,7 @@ So all the generations from Gerrit to Geert are eight generations; and from Geer
 
 Amid all this genealogical begetting, one rather striking thing was lost in Rotman’s direct male line – the surname Rotman. This is how it worked: until 1811, it was common in the eastern Netherlands to take one’s surname from the farm or holding where one lived or had been born. Since Geert Rotman’s offspring consisted of just two daughters, Lutgert and Jenneken, a male successor had to come from outside. Thus Lutgert Rotman remained Rotman after her marriage, while Berend Ruiters became a Rotman. Their children were given that surname too. (But when their son Engbert married Aaltje Bruntink and left the farm, he became Mr Bruntink.)
 
-So there was a farm, an *erve Rotman*, near Geesteren. Strictly speaking, if we follow the male line, the farm from which Berend Rotman née Ruiters came could just as well be called the family’s cradle. But that one interests us rather less, simply because it does not bear the name of our comic-strip hero. Precisely because of that name, we want to know where the Rotman farm was located – or whether it is still there.
+So there was a farm, an *erve Rotman*, near Geesteren. Strictly speaking, if we follow the male line, the farm from which Berend Rotman né Ruiters came could just as well be called the family’s cradle. But that one interests us rather less, simply because it does not bear the name of our comic-strip hero. Precisely because of that name, we want to know where the Rotman farm was located – or whether it is still there.
 
 ## The Rotmansdiekske
 
@@ -108,7 +108,7 @@ In the direct male line, we had not encountered another Gerrit after Gerrit Theo
 
 The farmer Gerrit Rotman (1768-1851) was Jan’s grandson. In 1800 he married Essele Avink, who died in Lemperhoek in 1842. Their only child, Engele Rotman, died in Lemperhoek in 1842. Their granddaughter Garritdina died in Lemperhoek in 1842.
 
-Poor Gerrit. Within a hundred days he lost three of those closest to him. What was going on in Lemperhoek? What were they doing there in the first place?
+Poor Gerrit. Within a hundred days he lost three of those closest to him. What was going on in Lemperhoek? And: what were they doing there in the first place?
 
 When Engele Rotman married Roelof te Winkel (1799-1858) from Ruurlo in 1822, the groom did not become Roelof Rotman. The couple did not settle at Rotman, but in the hamlet of Lemperhoek. Since he had not been born there, he may perhaps have acquired the use of a farm there, making it more logical to build their life there. Since his father-in-law Gerrit himself also died there in 1851, one wonders who was still living at Rotman after 1822...
 
