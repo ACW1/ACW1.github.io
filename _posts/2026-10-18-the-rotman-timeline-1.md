@@ -5,7 +5,7 @@ subtitle_number: 1
 author: Arthur van Kruining
 category: comics
 backgrim: /rotman-1/het-spoor-terug.webp
-image: /rotman-1/rotman-1980.jpg
+image: /assets/images/rotman-1/rotman-1980.jpg
 caption: Retracing the trail
 layout: post
 addendum: yes
