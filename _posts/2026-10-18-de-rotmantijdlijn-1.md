@@ -5,6 +5,7 @@ subtitle_number: 1
 author: Arthur van Kruining
 category: comics
 backgrim: /rotman-1/het-spoor-terug.webp
+image: /rotman-1/het-spoor-terug.webp
 caption: Het spoor terug
 layout: post
 addendum: ja
